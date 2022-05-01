@@ -10,7 +10,7 @@ role: Business Intelligence Engineer, EU Supply Chain Analytics
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Stanford University
+  - name: Amazon
     url: https://amazon.com/
 
 # Short bio (displayed in user profile at end of posts)
@@ -73,7 +73,7 @@ email: ''
 highlight_name: true
 ---
 
-João Pereira dos Santos is a **Chemical Engineer** specialized in **Processes & Product** from Faculdade de Engenharia da Universidade do Porto (**[FEUP](https://sigarra.up.pt/feup/en)**) currently working as a **Business Intelligence Engineer** for the EU Supply Chain Analytics Team at **Amazon** - world’s largest online marketplace, AI assistant provider, live-streaming platform and cloud computing platform as measured by revenue and market capitalization.
+João Pereira dos Santos is a **Chemical Engineer** specialized in **Processes & Product** from Faculdade de Engenharia da Universidade do Porto ([FEUP](https://sigarra.up.pt/feup/en)) currently working as a **Business Intelligence Engineer** for the EU Supply Chain Analytics Team at **Amazon** - world’s largest online marketplace, AI assistant provider, live-streaming platform and cloud computing platform as measured by revenue and market capitalization.
 
 During his degree, he won the [2018 Academic Games of Engineering by AEFEUP](https://www.facebook.com/ParalabPT/posts/1731759456861039): a group project aiming at designing a continuous hydrothermal liquefaction (HTL) biomass processing unit for Paralab, SA; and was also 3x Team Leader at the European BEST Engineering Competition Challenge - Team Design: a practical test consisting on the construction of a prototype with limited materials and low cost to solve a proposed problem.
 
