@@ -7,17 +7,17 @@ main:
   - name: Home
     url: '#about'
     weight: 10
-  - name: Posts
-    url: '#posts'
+  - name: Experience
+    url: '#experience'
     weight: 20
+  - name: MOOC
+    url: '#accomplishments'
+    weight: 30
   - name: Projects
     url: '#projects'
-    weight: 30
-  - name: Talks
-    url: '#talks'
     weight: 40
-  - name: Publications
-    url: '#featured'
+  - name: Posts
+    url: '#posts'
     weight: 50
   - name: Contact
     url: '#contact'
@@ -25,6 +25,6 @@ main:
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.
-#  - name: CV
-#    url: uploads/resume.pdf
-#    weight: 70
+ - name: CV
+   url: files/Joao_Santos_CV_2021_06_10.pdf
+   weight: 70
