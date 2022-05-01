@@ -24,6 +24,7 @@ date_format: Jan 2006
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 item:
   - certificate_url: https://www.youracclaim.com/badges/d31b93c4-caec-424d-bc3b-2330936d58ca
+    company_logo: aws
     date_end:
     date_start: "2021-02-01"
     description: |2-
