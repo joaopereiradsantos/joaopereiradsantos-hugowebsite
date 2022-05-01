@@ -28,10 +28,10 @@ item:
     date_start: "2021-02-01"
     description: |2-
       Intended for individuals who have the knowledge and skills necessary to effectively demonstrate an overall understanding of the AWS Cloud. Abilities Validated by the Certification: Define what the AWS Cloud is and the basic global infrastructure; Describe basic AWS Cloud architectural principles; Describe the AWS Cloud value proposition; Describe key services on the AWS platform and their common use cases (for example, compute and analytics); Describe basic security and compliance aspects of the AWS platform and the shared security model; Define the billing, account management, and pricing models; Identify sources of documentation or technical assistance (for example, whitepapers or support tickets); Describe basic/core characteristics of deploying and operating in the AWS Cloud. (Exam Score: 89.3%)
-      organization:  Amazon Web Services
+    organization:  Amazon Web Services
     organization_url: https://aws.amazon.com/
     title: AWS Certified Cloud Practitioner
-    url:
+    url: ''
   - certificate_url: https://www.datacamp.com/statement-of-accomplishment/track/5d8a94f52f3ebf9d42a8939a6f2c9266f2fb7cfa
     date_end:
     date_start: "2021-01-19"
@@ -48,7 +48,7 @@ item:
     organization: Jose Portilla, Pierian Data Inc.
     organization_url: https://www.pieriandata.com/
     title: Interactive Python Dashboards with Plotly and Dash
-    url:
+    url: ''
 
   - certificate_url: https://www.linkedin.com/feed/update/urn:li:activity:6717847221150240769
     date_end:
@@ -57,7 +57,7 @@ item:
     organization: Celonis
     organization_url: https://www.celonis.com
     title: "Process Mining Expert"
-    url:
+    url: ''
 
   - certificate_url: https://www.udemy.com/certificate/UC-f9c36eed-31bd-4cb2-b665-bfb27f8b7e7b/
     date_end:
@@ -66,7 +66,7 @@ item:
     organization: 365 Data Science
     organization_url: https://365datascience.com/
     title: 'Complete 2020 Data Science Bootcamp'
-    url:
+    url: ''
 
 design:
   columns: '2'
