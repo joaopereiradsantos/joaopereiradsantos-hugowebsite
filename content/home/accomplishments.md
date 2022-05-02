@@ -24,12 +24,11 @@ date_format: Jan 2006
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 item:
   - certificate_url: https://www.youracclaim.com/badges/d31b93c4-caec-424d-bc3b-2330936d58ca
-    icon: Amazon Web Services
     date_end:
     date_start: "2021-02-01"
     description: |2-
       Intended for individuals who have the knowledge and skills necessary to effectively demonstrate an overall understanding of the AWS Cloud. Abilities Validated by the Certification: Define what the AWS Cloud is and the basic global infrastructure; Describe basic AWS Cloud architectural principles; Describe the AWS Cloud value proposition; Describe key services on the AWS platform and their common use cases (for example, compute and analytics); Describe basic security and compliance aspects of the AWS platform and the shared security model; Define the billing, account management, and pricing models; Identify sources of documentation or technical assistance (for example, whitepapers or support tickets); Describe basic/core characteristics of deploying and operating in the AWS Cloud. (Exam Score: 89.3%)
-    organization:  Amazon Web Services
+    organization: Amazon
     organization_url: https://aws.amazon.com/
     title: AWS Certified Cloud Practitioner
     url: ''
