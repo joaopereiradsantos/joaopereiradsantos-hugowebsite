@@ -61,14 +61,31 @@ experience:
       - SQL Extract Jobs and Statistical Analysis with Excel: Pearson Correlation Coefficient, P-Value and Linear Regression.
 
 
-  - title: Summer Research Intern
-    company: University X
-    company_url: ''
+  - title: Data Analyst Intern | Physical Failure Analysis & Reliability Lab
+    company: Amkor Technology
+    company_url: "https://amkor.com/"
     company_logo: org-gc
-    location: California
-    date_start: '2016-01-01'
-    date_end: '2020-12-31'
-    description: Taught electronic engineering and researched semiconductor physics.
+    location: Mindelo, Portugal
+    date_start: "2020-09-01"
+    date_end: "2021-01-11"
+    description: |-
+      **Requests Management Workflow Automation & Optimization:**
+      - Applied DMAIC methodology (Define, Measure, Analyze, Improve, and Control) as a data-driven improvement cycle to clearly articulate the business problem, goal, potential resources, project scope, and high-level project timeline. Aimed at improving the Request Scheduling Efficiency by over 48% in a year;
+      - Implemented and Tracked KPIs with Python: Pandas, Statsmodels, Seaborn and Plotly;
+      - Semi-Automated a Relative Job Prioritization System with Excel: Power Query and VBA;
+      - Dashboard Prototype with Python: Dash and User Adoption with a Macro-Enabled Workbook.
+
+  - title: Master Thesis Project | Process Engineer
+    company: Amkor Technology
+    company_url: "https://amkor.com/"
+    company_logo: org-gc
+    location: Mindelo, Portugal
+    date_start: "2020-02-01"
+    date_end: "2020-08-01"
+    description: |-
+      **Qualitative and Quantitative Statistical Analysis in Copper Electroplating Baths:**
+      - Applying linear regression and correlation models (Pearson and Spearman) with R, Minitab and Excel, easing the decision-making process associated with the control of the main chemical components concentrations and total organic contaminations (TOC);
+      - Extract, Transform and Load (ETL) process applied to past manufacturing datasets, implemented on the Business Intelligence and Analytics software platform Microsoft Power BI, retrieving valuable insights.
 
 design:
   columns: '2'
