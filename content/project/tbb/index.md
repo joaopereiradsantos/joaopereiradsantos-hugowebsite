@@ -17,7 +17,7 @@ image:
 links:
 - icon: github
   icon_pack: fab
-  name: Private Repo
+  name: Private
   url: https://github.com/joaopereiradsantos/tennis-betting-bot
 url_code: ""
 url_pdf: ""

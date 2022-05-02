@@ -11,7 +11,7 @@ external_link: "https://github.com/joaopereiradsantos/covid19-second-wave-foreca
 links:
 - icon: github
   icon_pack: fab
-  name: Public Repo
+  name: Public
   url: https://github.com/joaopereiradsantos/covid19-second-wave-forecast
 url_code: ""
 url_pdf: ""
