@@ -52,7 +52,7 @@ experience:
 
       <b>Centralized Fluid Loading Dashboard</b>
       <details><summary>Details</summary>
-      <a href="[https://drive.corp.amazon.com/documents/mznjoao@/Archive/Docs/IXD%20Sort%20Share%20and%20Impact%20on%20Placement.pdf]">Internal Dashboard</a>
+      <a href="https://drive.corp.amazon.com/documents/mznjoao@/Archive/Docs/IXD%20Sort%20Share%20and%20Impact%20on%20Placement.pdf">Internal Dashboard</a>
       <ul>
         <li>Centralized Fluid Loading (FL) Dashboard for the overall Productivity (fluid loading share, volume, fill rate and labor) Sustainability (saved number of trucks, CO2 emissions, plastic waste) and Savings (transportation, productivity gain, unloading cost) metrics;</li>
         <li>EU IXD Fluid Loading is 100% more productive than normal pallet building and loading, loads 100% more items and reduces 50% of the trucks hence saving 13.5k tonnes of CO2 emissions;</li>
@@ -62,7 +62,7 @@ experience:
 
       <b>Sort Share and Impact on Item Selection</b>
       <details><summary>Details</summary>
-      <a href="[https://drive.corp.amazon.com/documents/mznjoao@/Archive/Docs/IXD%20Sort%20Share%20and%20Impact%20on%20Placement.pdf]">Internal Documentation</a>
+      <a href="https://drive.corp.amazon.com/documents/mznjoao@/Archive/Docs/IXD%20Sort%20Share%20and%20Impact%20on%20Placement.pdf">Internal Documentation</a>
       <ul>
         <li>Deep dive analysis regarding the impact on the unique item selection based on the IXD sort share deviation to ideals. Financial outcome based on the country level Cross-Border Fulfillment (CBF) cost on different ITS algorithm decisions;</li>
         <li>Improved sort share bridge to item selection and weekly WBR review in sort share deviation to ideals, right sortation and CBF due to wrong sortation;</li>
