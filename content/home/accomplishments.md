@@ -63,7 +63,7 @@ item:
     date_end:
     date_start: "2020-10-01"
     description: "Understanding of the Data Science field and the type of analysis carried out; Learn how to pre-process data; Understand the mathematics behind Machine Learning; Coding in Python and learn how to use it for statistical analysis; Perform linear and logistic regressions in Python; Carry out cluster and factor analysis; Create Machine Learning algorithms in Python, using NumPy, statsmodels and scikit-learn; Use state-of-the-art Deep Learning frameworks such as Google’s TensorFlow; Unfold the power of deep neural networks; Improve Machine Learning algorithms by studying underfitting, overfitting, training, validation, n-fold cross validation, testing, and how hyperparameters could improve performance; Apply your skills to real-life business cases. (29 Total Hours) "
-    organization: 365 Data Science
+    organization: Udemy
     organization_url: https://365datascience.com/
     title: 'Complete 2020 Data Science Bootcamp'
     url: ''
