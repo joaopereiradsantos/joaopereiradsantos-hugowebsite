@@ -50,7 +50,6 @@ experience:
       - 5% increase in forecast accuracy leading to an expected optimization in bin level planning for bin fullness balance and IXD bin offsets;
       - AWS SageMaker with Python: Pandas, Matplotlib, NumPy, Pmdarima and FBProphet, AWS RedShift and AWS QuickSight.        
 
-      <br>
       <b>Centralized Fluid Loading Dashboard</b>
       <details><summary>Details</summary>
       <a href="[https://drive.corp.amazon.com/documents/mznjoao@/Archive/Docs/IXD%20Sort%20Share%20and%20Impact%20on%20Placement.pdf]">Internal Dashboard</a>
@@ -60,8 +59,7 @@ experience:
         <li>SQL Scheduled Extract Jobs and Microsoft Power BI: Waffle chart, Sankey diagram & Radar chart.</li>
       </ul> 
       </details>
-      
-      <br>
+
       <b>Sort Share and Impact on Item Selection</b>
       <details><summary>Details</summary>
       <a href="[https://drive.corp.amazon.com/documents/mznjoao@/Archive/Docs/IXD%20Sort%20Share%20and%20Impact%20on%20Placement.pdf]">Internal Documentation</a>
@@ -80,8 +78,8 @@ experience:
     location: Mindelo, Portugal
     date_start: "2020-09-01"
     date_end: "2021-01-11"
-    description: |-
-      **Requests Management Workflow Automation & Optimization**
+    description: |2-
+      <b>Requests Management Workflow Automation & Optimization</b>
       <details><summary>Details</summary>
       <ul>
         <li>Applied DMAIC methodology (Define, Measure, Analyze, Improve, and Control) as a data-driven improvement cycle to clearly articulate the business problem, goal, potential resources, project scope, and high-level project timeline. Aimed at improving the Request Scheduling Efficiency by over 48% in a year;</li>
@@ -98,7 +96,7 @@ experience:
     location: Mindelo, Portugal
     date_start: "2020-02-01"
     date_end: "2020-08-01"
-    description: |-
+    description: |2-
       **Qualitative and Quantitative Statistical Analysis in Copper Electroplating Baths**
       - Applying linear regression and correlation models (Pearson and Spearman) with R, Minitab and Excel, easing the decision-making process associated with the control of the main chemical components concentrations and total organic contaminations (TOC);
       - Extract, Transform and Load (ETL) process applied to past manufacturing datasets, implemented on the Business Intelligence and Analytics software platform Microsoft Power BI, retrieving valuable insights.
