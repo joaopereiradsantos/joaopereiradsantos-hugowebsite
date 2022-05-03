@@ -33,9 +33,9 @@ experience:
       <ul>
         <li>
           <b>Why Spread is Biased & How to Overcome it: Spread Bias</b>
-          <p>Development of a new metric: Spread Bias. A complementary metric to FC Spread (how many FCs on average an ASIN is sent to). Mathematically, it’s a weekly weighted average share of total volume cross-docked at each FC per ASIN. The more biased the volume is towards one particular FC, the more the spread bias will tend to 1.
+          <p>Development of a new metric: Spread Bias. A complementary metric to FC Spread (how many FCs on average an ASIN is sent to). Mathematically, it’s a weekly weighted average share of total volume cross-docked at each FC per ASIN. The more biased the volume is towards one particular FC, the more the spread bias will tend to 1. Reciprocally, the more evenly and the more FCs the volume is spread to, spread bias will tend towards 0.
           <details><summary>Details</summary>
-          <a href="https://drive.corp.amazon.com/documents/mznjoao@/Archive/Docs/IXD%20Sort%20Share%20and%20Impact%20on%20Placement.pdf">Internal Dashboard</a>
+          <a href="https://drive.corp.amazon.com/documents/mznjoao@/Archive/Docs/Why%20Spread%20is%20Biased%20and%20How%20to%20Overcome%20It%20-%20Spread%20Bias.html">Internal Documentation</a>
           <ul>
             <li>Spread Bias is [] x more correlated to deviations in Case Break than in FC Spread. Less Spread Bias leads to a more uniform FC level placement which, in turn, increases unique inventory and reduces the risk of TRB (constraint in outbound capacity);</li>
             <li>Semi-Automated Jupyter Notebook Code & Markdown paper with interactive .html python code preview and Plotly graphs, Placement Impact bridge with Pearson Correlation Analysis and SQL script for production use.</li>
@@ -43,20 +43,29 @@ experience:
           </details></p>
         </li>
 
-      **[Why Spread is Biased & How to Overcome it: Spread Bias](https://drive.corp.amazon.com/documents/mznjoao@/Archive/Docs/Why%20Spread%20is%20Biased%20and%20How%20to%20Overcome%20It%20-%20Spread%20Bias.html)**
-      - Development of a new metric: Spread Bias. A complementary metric to FC Spread (how many FCs on average an ASIN is sent to). Mathematically, it’s a weekly weighted average share of total volume cross-docked at each FC per ASIN. The more biased the volume is towards one particular FC, the more the spread bias will tend to 1. Reciprocally, the more evenly and the more FCs the volume is spread to, spread bias will tend towards 0;
-      - Spread Bias is [] x more correlated to deviations in Case Break than in FC Spread. Less Spread Bias leads to a more uniform FC level placement which, in turn, increases unique inventory and reduces the risk of TRB (constraint in outbound capacity);
-      - Semi-Automated Jupyter Notebook Code & Markdown paper with interactive .html python code preview and Plotly graphs, Placement Impact bridge with Pearson Correlation Analysis and SQL script for production use.
-
-      **[ITS 2% Rule & Impact on Placement](https://drive.corp.amazon.com/documents/mznjoao@/Archive/Docs/IXD%202%20%25%20Rule%20and%20Impact%20on%20Placement.pdf)**
-      - Understanding of hard constrains in optimization models (SCOT heuristic approach to reduce latency of the request easing the algorithm decision time by removing the possibility of case break) and impact on placement and financial outcomes (spread, item selection, period 1/ period 2 AR share and misplacement volume);
-      - Expected a yearly decrease of 4MM units in total cross-border fulfillment (CBF) by reduction in misplaced volume, 3x more item selection leading to higher LIS, higher inventory turns and 2x less Spread Bias;
-      - Semi-Automated Jupyter Notebook Code & Markdown paper with interactive .html python code preview and interactive Plotly graphs.    
-
-      **[Tote Utilization Dashboard](https://eu-west-1.quicksight.aws.amazon.com/sn/dashboards/359cfee0-7325-4dcc-81d0-93e1f503171d)**
-      - Tote Utilization dashboard and monitoring for the IXD Sr. Ops Managers & Area Managers. Aimed at knowledge sharing and improved users tote filling best practices in order to increase truck fill rate and tote optimization;
-      - Expected an increase of 2% in the weekly average tote utilization by IXD, leading to a yearly reduction of [] MM totes, 1k trucks, 800 tonnes of CO<sub>2</sub> emissions and $ 1MM in overall savings;
-      - Data Pipeline between 2 AWS RedShift Clusters, Daily Maintenance of 6 Tables with SQL ETL Manager and AWS QuickSight.       
+        <li>
+          <b>ITS 2% Rule & Impact on Placement</b>
+          <p>Understanding of hard constrains in optimization models (SCOT heuristic approach to reduce latency of the request easing the algorithm decision time by removing the possibility of case break) and impact on placement and financial outcomes (spread, item selection, period 1/ period 2 AR share and misplacement volume).
+          <details><summary>Details</summary>
+          <a href="https://drive.corp.amazon.com/documents/mznjoao@/Archive/Docs/IXD%202%20%25%20Rule%20and%20Impact%20on%20Placement.pdf">Internal Documentation</a>
+          <ul>
+            <li>Expected a yearly decrease of 4MM units in total cross-border fulfillment (CBF) by reduction in misplaced volume, 3x more item selection leading to higher LIS, higher inventory turns and 2x less Spread Bias;</li>
+            <li>Semi-Automated Jupyter Notebook Code & Markdown paper with interactive .html python code preview and interactive Plotly graphs.</li>
+          </ul> 
+          </details></p>
+        </li>
+        
+        <li>
+          <b>Tote Utilization Dashboard</b>
+          <p>Tote Utilization dashboard and monitoring for the IXD Sr. Ops Managers & Area Managers. Aimed at knowledge sharing and improved users tote filling best practices in order to increase truck fill rate and tote optimization.
+          <details><summary>Details</summary>
+          <a href="https://eu-west-1.quicksight.aws.amazon.com/sn/dashboards/359cfee0-7325-4dcc-81d0-93e1f503171d">Internal Dashboard</a>
+          <ul>
+            <li>Expected an increase of 2% in the weekly average tote utilization by IXD, leading to a yearly reduction of [] MM totes, 1k trucks, 800 tonnes of CO<sub>2</sub> emissions and $ 1MM in overall savings;</li>
+            <li>Data Pipeline between 2 AWS RedShift Clusters, Daily Maintenance of 6 Tables with SQL ETL Manager and AWS QuickSight.   </li>
+          </ul> 
+          </details></p>
+        </li> 
 
       **[Arc Bin Level Forecast](https://eu-west-1.quicksight.aws.amazon.com/sn/dashboards/6b6d4996-87b8-4385-9782-63149627913f)**
       - Improved accuracy on the arc bin level forecast with univariate multi forecasting time series using Exponential Moving Average (EMA), Auto-ARIMA and FBProphet models. QuickSight analysis and Dashboard for the preceding weekly arc bin volume and share;
