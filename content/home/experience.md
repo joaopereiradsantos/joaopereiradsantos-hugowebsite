@@ -33,6 +33,7 @@ experience:
       <p><b>EU Supply Chain Analytics BI Admin</b><br> 
       The <a href="https://w.amazon.com/bin/view/EU_SC_ANALYTICS_BI_ADMIN/">EU SC Analytics BI Admin Team</a> mission is to empower the users (+300 users) to produce and obtain data in the fastest, easiest and cheapest way, while maintaining and continuously improve the BI infrastructure.<br>
       Ownership and management of 2 AWS accounts, including 2 Redshift clusters.</p>
+      <br>
       <ul>
         <li>
           <b>AWS Auto Tag</b>
