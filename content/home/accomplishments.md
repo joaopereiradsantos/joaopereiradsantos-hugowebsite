@@ -54,7 +54,7 @@ item:
     date_end:
     date_start: "2020-11-01"
     description: "Data Engineer Trainning: Technically connect and maintain Celonis processes; Analyst Trainning: Translate data into actionable business insights. Create target oriented analyses to transform your business; Business User Trainning: Simplify your daily work. Get intelligent recommendations to execute the right actions. (30 Total Hours)"
-    organization: Celonis 
+    organization: Celonis1
     organization_url: https://www.celonis.com
     title: "Process Mining Expert"
     url: ''
