@@ -60,8 +60,7 @@ experience:
       </ul> 
       </details>
 
-      <b>Sort Share and Impact on Item Selection</b>
-      <details><summary>Details</summary>
+      <details><summary><b>Sort Share and Impact on Item Selection</b></summary>
       <a href="https://drive.corp.amazon.com/documents/mznjoao@/Archive/Docs/IXD%20Sort%20Share%20and%20Impact%20on%20Placement.pdf">Internal Documentation</a>
       <ul>
         <li>Deep dive analysis regarding the impact on the unique item selection based on the IXD sort share deviation to ideals. Financial outcome based on the country level Cross-Border Fulfillment (CBF) cost on different ITS algorithm decisions;</li>
