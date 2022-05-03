@@ -59,6 +59,17 @@ experience:
       - Deep dive analysis regarding the impact on the unique item selection based on the IXD sort share deviation to ideals. Financial outcome based on the country level Cross-Border Fulfillment (CBF) cost on different ITS algorithm decisions;
       - Improved sort share bridge to item selection and weekly WBR review in sort share deviation to ideals, right sortation and CBF due to wrong sortation;
       - SQL Extract Jobs and Statistical Analysis with Excel: Pearson Correlation Coefficient, P-Value and Linear Regression.
+      
+      **Sort Share and Impact on Item Selection**
+      <details><summary>Details</summary>
+      **[Sort Share and Impact on Item Selection](https://drive.corp.amazon.com/documents/mznjoao@/Archive/Docs/IXD%20Sort%20Share%20and%20Impact%20on%20Placement.pdf)**
+      <ul>
+        <li>Applied DMAIC methodology (Define, Measure, Analyze, Improve, and Control) as a data-driven improvement cycle to clearly articulate the business problem, goal, potential resources, project scope, and high-level project timeline. Aimed at improving the Request Scheduling Efficiency by over 48% in a year;</li>
+        <li>Implemented and Tracked KPIs with Python: Pandas, Statsmodels, Seaborn and Plotly;</li>
+        <li>Semi-Automated a Relative Job Prioritization System with Excel: Power Query and VBA;</li>
+        <li>Dashboard Prototype with Python: Dash and User Adoption with a Macro-Enabled Workbook.</li>
+      </ul> 
+      </details>
 
 
   - title: Data Analyst Intern | Physical Failure Analysis & Reliability Lab
@@ -69,23 +80,14 @@ experience:
     date_start: "2020-09-01"
     date_end: "2021-01-11"
     description: |-
-      **Requests Management Workflow Automation & Optimization:**
+      **Requests Management Workflow Automation & Optimization**
       <details><summary>Details</summary>
       <ul>
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
+        <li>Applied DMAIC methodology (Define, Measure, Analyze, Improve, and Control) as a data-driven improvement cycle to clearly articulate the business problem, goal, potential resources, project scope, and high-level project timeline. Aimed at improving the Request Scheduling Efficiency by over 48% in a year;</li>
+        <li>Implemented and Tracked KPIs with Python: Pandas, Statsmodels, Seaborn and Plotly;</li>
+        <li>Semi-Automated a Relative Job Prioritization System with Excel: Power Query and VBA;</li>
+        <li>Dashboard Prototype with Python: Dash and User Adoption with a Macro-Enabled Workbook.</li>
       </ul> 
-      
-      Test
-
-      - Applied DMAIC methodology (Define, Measure, Analyze, Improve, and Control) as a data-driven improvement cycle to clearly articulate the business problem, goal, potential resources, project scope, and high-level project timeline. Aimed at improving the Request Scheduling Efficiency by over 48% in a year;
-  
-      - Implemented and Tracked KPIs with Python: Pandas, Statsmodels, Seaborn and Plotly;
-  
-      - Semi-Automated a Relative Job Prioritization System with Excel: Power Query and VBA;
-  
-      - Dashboard Prototype with Python: Dash and User Adoption with a Macro-Enabled Workbook.
       </details>
 
   - title: Master Thesis Project | Process Engineer
@@ -96,7 +98,7 @@ experience:
     date_start: "2020-02-01"
     date_end: "2020-08-01"
     description: |-
-      **Qualitative and Quantitative Statistical Analysis in Copper Electroplating Baths:**
+      **Qualitative and Quantitative Statistical Analysis in Copper Electroplating Baths**
       - Applying linear regression and correlation models (Pearson and Spearman) with R, Minitab and Excel, easing the decision-making process associated with the control of the main chemical components concentrations and total organic contaminations (TOC);
       - Extract, Transform and Load (ETL) process applied to past manufacturing datasets, implemented on the Business Intelligence and Analytics software platform Microsoft Power BI, retrieving valuable insights.
 
