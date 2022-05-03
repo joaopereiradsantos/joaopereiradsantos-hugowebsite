@@ -113,15 +113,18 @@ experience:
     date_start: "2020-09-01"
     date_end: "2021-01-11"
     description: |2-
-      <b>Requests Management Workflow Automation & Optimization</b>
-      <details><summary>Details</summary>
-      <ul>
-        <li>Applied DMAIC methodology (Define, Measure, Analyze, Improve, and Control) as a data-driven improvement cycle to clearly articulate the business problem, goal, potential resources, project scope, and high-level project timeline. Aimed at improving the Request Scheduling Efficiency by over 48% in a year;</li>
-        <li>Implemented and Tracked KPIs with Python: Pandas, Statsmodels, Seaborn and Plotly;</li>
-        <li>Semi-Automated a Relative Job Prioritization System with Excel: Power Query and VBA;</li>
-        <li>Dashboard Prototype with Python: Dash and User Adoption with a Macro-Enabled Workbook.</li>
-      </ul> 
-      </details>
+      <li>
+        <b>Requests Management Workflow Automation & Optimization</b>
+        <p>Aimed at improving the Request Scheduling Efficiency by over 48% YoY.
+        <details><summary>Details</summary>
+        <ul>
+          <li>Applied DMAIC methodology (Define, Measure, Analyze, Improve, and Control) as a data-driven improvement cycle to clearly articulate the business problem, goal, potential resources, project scope, and high-level project timeline;</li>
+          <li>Implemented and Tracked KPIs with Python: Pandas, Statsmodels, Seaborn and Plotly;</li>
+          <li>Semi-Automated a Relative Job Prioritization System with Excel: Power Query and VBA;</li></ul>
+          <li?Dashboard Prototype with Python: Dash and User Adoption with a Macro-Enabled Workbook.</li>
+        </ul> 
+        </details></p>
+      </li> 
 
   - title: Master Thesis Project | Process Engineer
     company: Amkor Technology
@@ -131,12 +134,18 @@ experience:
     date_start: "2020-02-01"
     date_end: "2020-08-01"
     description: |2-
-      **Qualitative and Quantitative Statistical Analysis in Copper Electroplating Baths**
-      - Applying linear regression and correlation models (Pearson and Spearman) with R, Minitab and Excel, easing the decision-making process associated with the control of the main chemical components concentrations and total organic contaminations (TOC);
-      - Extract, Transform and Load (ETL) process applied to past manufacturing datasets, implemented on the Business Intelligence and Analytics software platform Microsoft Power BI, retrieving valuable insights.
-  
-      Lorem ipsum dolor sit amet,At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-      </div>
+      <li>
+        <b>Qualitative and Quantitative Statistical Analysis in Copper Electroplating Baths</b>
+        <p>Ease the decision-making process associated with the control of the main chemical components concentrations and total organic contaminations (TOC).
+        <details><summary>Details</summary>
+        <a href="https://repositorio-aberto.up.pt/handle/10216/132835">Public Documentation</a>
+        <ul>
+          <li>Applying linear regression and correlation models (Pearson and Spearman) with R, Minitab and Excel;</li>
+          <li>Implemented and Tracked KPIs with Python: Pandas, Statsmodels, Seaborn and Plotly;</li>
+          <li>Extract, Transform and Load (ETL) process applied to past manufacturing datasets, implemented on the Business Intelligence and Analytics software platform Microsoft Power BI, retrieving valuable insights.</li></ul>
+        </ul> 
+        </details></p>
+      </li> 
 
 
 design:
