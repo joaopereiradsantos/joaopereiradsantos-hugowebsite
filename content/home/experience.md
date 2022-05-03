@@ -31,8 +31,8 @@ experience:
     date_end: ''
     description: |2-
       <b>EU Supply Chain Analytics BI Admin</b> 
-      The BI admin team’s mission is to empower the users (+300 users) to produce and obtain data in the fastest, easiest and cheapest way, while maintaining and continuously improve the BI infrastructure.
-      Ownership and management of 2 AWS accounts, including 2 Redshift clusters.
+      <p>The BI admin team’s mission is to empower the users (+300 users) to produce and obtain data in the fastest, easiest and cheapest way, while maintaining and continuously improve the BI infrastructure.<br>
+      Ownership and management of 2 AWS accounts, including 2 Redshift clusters.</p>
       <ul>
         <li>
           <b>AWS Auto Tag</b>
