@@ -74,9 +74,7 @@ experience:
       - Implemented and Tracked KPIs with Python: Pandas, Statsmodels, Seaborn and Plotly;
       - Semi-Automated a Relative Job Prioritization System with Excel: Power Query and VBA;
       - Dashboard Prototype with Python: Dash and User Adoption with a Macro-Enabled Workbook.
-      {{< spoiler text="Click to view the spoiler" >}}
-      You found me!
-      {{< /spoiler >}}
+      >! This is a spoiler
 
   - title: Master Thesis Project | Process Engineer
     company: Amkor Technology
