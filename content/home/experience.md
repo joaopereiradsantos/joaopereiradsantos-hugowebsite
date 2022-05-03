@@ -62,36 +62,47 @@ experience:
           <a href="https://eu-west-1.quicksight.aws.amazon.com/sn/dashboards/359cfee0-7325-4dcc-81d0-93e1f503171d">Internal Dashboard</a>
           <ul>
             <li>Expected an increase of 2% in the weekly average tote utilization by IXD, leading to a yearly reduction of [] MM totes, 1k trucks, 800 tonnes of CO<sub>2</sub> emissions and $ 1MM in overall savings;</li>
-            <li>Data Pipeline between 2 AWS RedShift Clusters, Daily Maintenance of 6 Tables with SQL ETL Manager and AWS QuickSight.   </li>
+            <li>Data Pipeline between 2 AWS RedShift Clusters, Daily Maintenance of 6 Tables with SQL ETL Manager and AWS QuickSight.</li>
           </ul> 
           </details></p>
         </li> 
 
-      **[Arc Bin Level Forecast](https://eu-west-1.quicksight.aws.amazon.com/sn/dashboards/6b6d4996-87b8-4385-9782-63149627913f)**
-      - Improved accuracy on the arc bin level forecast with univariate multi forecasting time series using Exponential Moving Average (EMA), Auto-ARIMA and FBProphet models. QuickSight analysis and Dashboard for the preceding weekly arc bin volume and share;
-      - 5% increase in forecast accuracy leading to an expected optimization in bin level planning for bin fullness balance and IXD bin offsets;
-      - AWS SageMaker with Python: Pandas, Matplotlib, NumPy, Pmdarima and FBProphet, AWS RedShift and AWS QuickSight.        
+        <li>
+          <b>Arc Bin Level Forecast</b>
+          <p>Improved accuracy on the arc bin level forecast with univariate multi forecasting time series using Exponential Moving Average (EMA), Auto-ARIMA and FBProphet models.
+          <details><summary>Details</summary>
+          <a href="https://eu-west-1.quicksight.aws.amazon.com/sn/dashboards/6b6d4996-87b8-4385-9782-63149627913f">Internal Dashboard</a>
+          <ul>
+            <li>QuickSight analysis and Dashboard for the preceding weekly arc bin volume and share;</li>
+            <li>5% increase in forecast accuracy leading to an expected optimization in bin level planning for bin fullness balance and IXD bin offsets;</li>
+            <li>AWS SageMaker with Python: Pandas, Matplotlib, NumPy, Pmdarima and FBProphet, AWS RedShift and AWS QuickSight.</li>
+          </ul> 
+          </details></p>
+        </li> 
 
-      <b>Centralized Fluid Loading Dashboard</b>
-      <details><summary>Details</summary>
-      <a href="https://drive.corp.amazon.com/documents/mznjoao@/Archive/Docs/IXD%20Sort%20Share%20and%20Impact%20on%20Placement.pdf">Internal Dashboard</a>
-      <ul>
-        <li>Centralized Fluid Loading (FL) Dashboard for the overall Productivity (fluid loading share, volume, fill rate and labor) Sustainability (saved number of trucks, CO2 emissions, plastic waste) and Savings (transportation, productivity gain, unloading cost) metrics;</li>
-        <li>EU IXD Fluid Loading is 100% more productive than normal pallet building and loading, loads 100% more items and reduces 50% of the trucks hence saving 13.5k tonnes of CO2 emissions;</li>
-        <li>SQL Scheduled Extract Jobs and Microsoft Power BI: Waffle chart, Sankey diagram & Radar chart.</li>
-      </ul> 
-      </details>
+        <li>
+          <b>Centralized Fluid Loading Dashboard</b>
+          <p>Centralized Fluid Loading (FL) Dashboard for the overall Productivity (fluid loading share, volume, fill rate and labor) Sustainability (saved number of trucks, CO2 emissions, plastic waste) and Savings (transportation, productivity gain, unloading cost) metrics.
+          <details><summary>Details</summary>
+          <a href="https://drive.corp.amazon.com/documents/mznjoao@/Archive/Docs/IXD%20Sort%20Share%20and%20Impact%20on%20Placement.pdf">Internal Dashboard</a>
+          <ul>
+            <li>EU IXD Fluid Loading is 100% more productive than normal pallet building and loading, loads 100% more items and reduces 50% of the trucks hence saving 13.5k tonnes of CO2 emissions;</li>
+            <li>SQL Scheduled Extract Jobs and Microsoft Power BI: Waffle chart, Sankey diagram & Radar chart.</li>
+          </ul> 
+          </details></p>
+        </li> 
 
-      <details><summary><b>Sort Share and Impact on Item Selection</b></summary>
-      <a href="https://drive.corp.amazon.com/documents/mznjoao@/Archive/Docs/IXD%20Sort%20Share%20and%20Impact%20on%20Placement.pdf">Internal Documentation</a>
-      <ul>
-        <li>Deep dive analysis regarding the impact on the unique item selection based on the IXD sort share deviation to ideals. Financial outcome based on the country level Cross-Border Fulfillment (CBF) cost on different ITS algorithm decisions;</li>
-        <li>Improved sort share bridge to item selection and weekly WBR review in sort share deviation to ideals, right sortation and CBF due to wrong sortation;</li>
-        <li>SQL Extract Jobs and Statistical Analysis with Excel: Pearson Correlation Coefficient, P-Value and Linear Regression.</li>
-      </ul> 
-      </details>
-      </ul> 
-
+        <li>
+          <b>Sort Share and Impact on Item Selection</b>
+          <p>Deep dive analysis regarding the impact on the unique item selection based on the IXD sort share deviation to ideals. Financial outcome based on the country level Cross-Border Fulfillment (CBF) cost on different ITS algorithm decisions.
+          <details><summary>Details</summary>
+          <a href="https://drive.corp.amazon.com/documents/mznjoao@/Archive/Docs/IXD%20Sort%20Share%20and%20Impact%20on%20Placement.pdf">Internal Dashboard</a>
+          <ul>
+            <li>Improved sort share bridge to item selection and weekly WBR review in sort share deviation to ideals, right sortation and CBF due to wrong sortation;</li>
+            <li>SQL Extract Jobs and Statistical Analysis with Excel: Pearson Correlation Coefficient, P-Value and Linear Regression.</li>
+          </ul> 
+          </details></p>
+        </li> 
 
   - title: Data Analyst Intern | Physical Failure Analysis & Reliability Lab
     company: Amkor Technology
