@@ -75,7 +75,10 @@ experience:
         <li>Coffee</li>
         <li>Tea</li>
         <li>Milk</li>
-      </ul>  
+      </ul> 
+      
+      Test
+
       - Applied DMAIC methodology (Define, Measure, Analyze, Improve, and Control) as a data-driven improvement cycle to clearly articulate the business problem, goal, potential resources, project scope, and high-level project timeline. Aimed at improving the Request Scheduling Efficiency by over 48% in a year;
   
       - Implemented and Tracked KPIs with Python: Pandas, Statsmodels, Seaborn and Plotly;
