@@ -22,6 +22,40 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
+  - title: Business Intelligence Engineer | Transportation & Supply Chain (EU SC FC Launch & Transfer Analytics)
+    company: Amazon
+    company_url: 'https://amazon.com/'
+    company_logo: amazon
+    location: Luxembourg, Luxembourg
+    date_start: '2021-08-01'
+    date_end: ''
+    description: |2-
+      <b>EU Supply Chain Analytics BI Admin</b> 
+      The BI admin team’s mission is to empower the users (+300 users) to produce and obtain data in the fastest, easiest and cheapest way, while maintaining and continuously improve the BI infrastructure.
+      Ownership and management of 2 AWS accounts, including 2 Redshift clusters.
+      <ul>
+        <li>
+          <b>AWS Auto Tag</b>
+          <p>“Tag Early, Tag, Often”. Automatically tagging resources greatly improves the ease of cost allocation and governance by the BI Admin Team. It is a challenge to get users to remember to and correctly label every AWS resource. Fundamentally they shouldn’t have to. 
+          <details><summary>Details</summary>
+          <a href="https://github.com/GorillaStack/auto-tag">Public Repository</a>
+          <ul>
+            <li>As soon aa user creates a resource supported by AutoTag (such as EC2 instances, IAM users, IAM roles, RDS instances, S3 buckets, EMR clusters, VPCs, etc), AutoTag will automatically apply up to 3 new tags: C (Resource Owner) + T (Resource Creation Datetime) + I (Resource Invoked by what other resource).</li>
+          </ul> 
+          </details></p>
+        </li>
+
+        <li>
+          <b>AWS Auto Scheduler</b>
+          <p>Reduces operational costs by stopping resources that are not in use and starts resources when their capacity is needed. This solution can result in up to 70% cost savings on those instances that are only necessary during regular business hours (weekly utilization reduced from 168 hours to 50 hours). 
+          <details><summary>Details</summary>
+          <a href="https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-aws/welcome.html">Public Documentation</a>
+          <ul>
+            <li>WIP</li>
+          </ul> 
+          </details></p>
+        </li>
+
   - title: Business Intelligence Intern | Transportation & Supply Chain (EU IXD)
     company: Amazon
     company_url: 'https://amazon.com/'
