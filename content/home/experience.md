@@ -66,6 +66,7 @@ experience:
           </ul> 
           </details></p>
         </li>
+        </ul>
 
       <p><b>EU Supply Chain Analytics FC Launch</b><br> 
       The <a href="https://w.amazon.com/bin/view/EU_SC_FC_Launch_Transfer_Analytics/">EU SC FC Launch Team</a> manages the supply chain ramp up of new Amazon-owned FCs from zero to one.</p>
