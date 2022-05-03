@@ -64,7 +64,7 @@ experience:
   - title: Data Analyst Intern | Physical Failure Analysis & Reliability Lab
     company: Amkor Technology
     company_url: "https://amkor.com/"
-    company_logo: test
+    company_logo: amkor_tech
     location: Mindelo, Portugal
     date_start: "2020-09-01"
     date_end: "2021-01-11"
@@ -78,7 +78,7 @@ experience:
   - title: Master Thesis Project | Process Engineer
     company: Amkor Technology
     company_url: "https://amkor.com/"
-    company_logo: test
+    company_logo: amkor_tech
     location: Mindelo, Portugal
     date_start: "2020-02-01"
     date_end: "2020-08-01"
