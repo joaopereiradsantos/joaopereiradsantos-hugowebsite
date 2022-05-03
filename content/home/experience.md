@@ -30,15 +30,18 @@ experience:
     date_start: '2021-02-08'
     date_end: '2021-07-31'
     description: |2-
-      <b>Why Spread is Biased & How to Overcome it: Spread Bias</b>
-      Development of a new metric: Spread Bias. A complementary metric to FC Spread (how many FCs on average an ASIN is sent to). Mathematically, it’s a weekly weighted average share of total volume cross-docked at each FC per ASIN. The more biased the volume is towards one particular FC, the more the spread bias will tend to 1.
-      <details><summary>Details</summary>
-      <a href="https://drive.corp.amazon.com/documents/mznjoao@/Archive/Docs/IXD%20Sort%20Share%20and%20Impact%20on%20Placement.pdf">Internal Dashboard</a>
       <ul>
-        <li>Spread Bias is [] x more correlated to deviations in Case Break than in FC Spread. Less Spread Bias leads to a more uniform FC level placement which, in turn, increases unique inventory and reduces the risk of TRB (constraint in outbound capacity);</li>
-        <li>Semi-Automated Jupyter Notebook Code & Markdown paper with interactive .html python code preview and Plotly graphs, Placement Impact bridge with Pearson Correlation Analysis and SQL script for production use.</li>
-      </ul> 
-      </details>
+        <li>
+          <b>Why Spread is Biased & How to Overcome it: Spread Bias</b>
+          <p>Development of a new metric: Spread Bias. A complementary metric to FC Spread (how many FCs on average an ASIN is sent to). Mathematically, it’s a weekly weighted average share of total volume cross-docked at each FC per ASIN. The more biased the volume is towards one particular FC, the more the spread bias will tend to 1.
+          <details><summary>Details</summary>
+          <a href="https://drive.corp.amazon.com/documents/mznjoao@/Archive/Docs/IXD%20Sort%20Share%20and%20Impact%20on%20Placement.pdf">Internal Dashboard</a>
+          <ul>
+            <li>Spread Bias is [] x more correlated to deviations in Case Break than in FC Spread. Less Spread Bias leads to a more uniform FC level placement which, in turn, increases unique inventory and reduces the risk of TRB (constraint in outbound capacity);</li>
+            <li>Semi-Automated Jupyter Notebook Code & Markdown paper with interactive .html python code preview and Plotly graphs, Placement Impact bridge with Pearson Correlation Analysis and SQL script for production use.</li>
+          </ul> 
+          </details></p>
+        </li>
 
       **[Why Spread is Biased & How to Overcome it: Spread Bias](https://drive.corp.amazon.com/documents/mznjoao@/Archive/Docs/Why%20Spread%20is%20Biased%20and%20How%20to%20Overcome%20It%20-%20Spread%20Bias.html)**
       - Development of a new metric: Spread Bias. A complementary metric to FC Spread (how many FCs on average an ASIN is sent to). Mathematically, it’s a weekly weighted average share of total volume cross-docked at each FC per ASIN. The more biased the volume is towards one particular FC, the more the spread bias will tend to 1. Reciprocally, the more evenly and the more FCs the volume is spread to, spread bias will tend towards 0;
@@ -78,6 +81,7 @@ experience:
         <li>SQL Extract Jobs and Statistical Analysis with Excel: Pearson Correlation Coefficient, P-Value and Linear Regression.</li>
       </ul> 
       </details>
+      </ul> 
 
 
   - title: Data Analyst Intern | Physical Failure Analysis & Reliability Lab
