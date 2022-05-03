@@ -70,11 +70,12 @@ experience:
     date_end: "2021-01-11"
     description: |-
       **Requests Management Workflow Automation & Optimization:**
+      <details><summary>Details</summary>
       - Applied DMAIC methodology (Define, Measure, Analyze, Improve, and Control) as a data-driven improvement cycle to clearly articulate the business problem, goal, potential resources, project scope, and high-level project timeline. Aimed at improving the Request Scheduling Efficiency by over 48% in a year;
       - Implemented and Tracked KPIs with Python: Pandas, Statsmodels, Seaborn and Plotly;
       - Semi-Automated a Relative Job Prioritization System with Excel: Power Query and VBA;
       - Dashboard Prototype with Python: Dash and User Adoption with a Macro-Enabled Workbook.
-      <details><summary>Details</summary>Something small enough to escape casual notice.</details>
+      </details>
 
   - title: Master Thesis Project | Process Engineer
     company: Amkor Technology
