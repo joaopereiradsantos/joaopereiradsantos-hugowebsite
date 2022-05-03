@@ -60,8 +60,10 @@ experience:
       - Improved sort share bridge to item selection and weekly WBR review in sort share deviation to ideals, right sortation and CBF due to wrong sortation;
       - SQL Extract Jobs and Statistical Analysis with Excel: Pearson Correlation Coefficient, P-Value and Linear Regression.
       
+
       **Sort Share and Impact on Item Selection**
       <details><summary>Details</summary>
+      <a href="url">link text</a>
       **[Sort Share and Impact on Item Selection](https://drive.corp.amazon.com/documents/mznjoao@/Archive/Docs/IXD%20Sort%20Share%20and%20Impact%20on%20Placement.pdf)**
       <ul>
         <li>Applied DMAIC methodology (Define, Measure, Analyze, Improve, and Control) as a data-driven improvement cycle to clearly articulate the business problem, goal, potential resources, project scope, and high-level project timeline. Aimed at improving the Request Scheduling Efficiency by over 48% in a year;</li>
