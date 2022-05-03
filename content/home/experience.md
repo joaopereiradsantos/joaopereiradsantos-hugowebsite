@@ -54,22 +54,15 @@ experience:
       - Centralized Fluid Loading (FL) Dashboard for the overall Productivity (fluid loading share, volume, fill rate and labor) Sustainability (saved number of trucks, CO2 emissions, plastic waste) and Savings (transportation, productivity gain, unloading cost) metrics;
       - EU IXD Fluid Loading is 100% more productive than normal pallet building and loading, loads 100% more items and reduces 50% of the trucks hence saving 13.5k tonnes of CO2 emissions;
       - SQL Scheduled Extract Jobs and Microsoft Power BI: Waffle chart, Sankey diagram & Radar chart.    
-
-      **[Sort Share and Impact on Item Selection](https://drive.corp.amazon.com/documents/mznjoao@/Archive/Docs/IXD%20Sort%20Share%20and%20Impact%20on%20Placement.pdf)**
-      - Deep dive analysis regarding the impact on the unique item selection based on the IXD sort share deviation to ideals. Financial outcome based on the country level Cross-Border Fulfillment (CBF) cost on different ITS algorithm decisions;
-      - Improved sort share bridge to item selection and weekly WBR review in sort share deviation to ideals, right sortation and CBF due to wrong sortation;
-      - SQL Extract Jobs and Statistical Analysis with Excel: Pearson Correlation Coefficient, P-Value and Linear Regression.
       
-
+      <br>
       **Sort Share and Impact on Item Selection**
       <details><summary>Details</summary>
-      <a href="url">link text</a>
-      **[Sort Share and Impact on Item Selection](https://drive.corp.amazon.com/documents/mznjoao@/Archive/Docs/IXD%20Sort%20Share%20and%20Impact%20on%20Placement.pdf)**
+      <a href="[url](https://drive.corp.amazon.com/documents/mznjoao@/Archive/Docs/IXD%20Sort%20Share%20and%20Impact%20on%20Placement.pdf)">Sort Share and Impact on Item Selection</a>
       <ul>
-        <li>Applied DMAIC methodology (Define, Measure, Analyze, Improve, and Control) as a data-driven improvement cycle to clearly articulate the business problem, goal, potential resources, project scope, and high-level project timeline. Aimed at improving the Request Scheduling Efficiency by over 48% in a year;</li>
-        <li>Implemented and Tracked KPIs with Python: Pandas, Statsmodels, Seaborn and Plotly;</li>
-        <li>Semi-Automated a Relative Job Prioritization System with Excel: Power Query and VBA;</li>
-        <li>Dashboard Prototype with Python: Dash and User Adoption with a Macro-Enabled Workbook.</li>
+        <li>Deep dive analysis regarding the impact on the unique item selection based on the IXD sort share deviation to ideals. Financial outcome based on the country level Cross-Border Fulfillment (CBF) cost on different ITS algorithm decisions;</li>
+        <li>Improved sort share bridge to item selection and weekly WBR review in sort share deviation to ideals, right sortation and CBF due to wrong sortation;</li>
+        <li>SQL Extract Jobs and Statistical Analysis with Excel: Pearson Correlation Coefficient, P-Value and Linear Regression.</li>
       </ul> 
       </details>
 
