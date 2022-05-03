@@ -30,17 +30,17 @@ experience:
     date_start: '2021-08-01'
     date_end: ''
     description: |2-
-      <b>EU Supply Chain Analytics BI Admin</b> 
-      <p>The BI admin team’s mission is to empower the users (+300 users) to produce and obtain data in the fastest, easiest and cheapest way, while maintaining and continuously improve the BI infrastructure.<br>
+      <p><b>EU Supply Chain Analytics BI Admin</b><br> 
+      The <a href="https://w.amazon.com/bin/view/EU_SC_ANALYTICS_BI_ADMIN/">EU SC Analytics BI Admin Team</a> mission is to empower the users (+300 users) to produce and obtain data in the fastest, easiest and cheapest way, while maintaining and continuously improve the BI infrastructure.<br>
       Ownership and management of 2 AWS accounts, including 2 Redshift clusters.</p>
       <ul>
         <li>
           <b>AWS Auto Tag</b>
           <p>“Tag Early, Tag, Often”. Automatically tagging resources greatly improves the ease of cost allocation and governance by the BI Admin Team. It is a challenge to get users to remember to and correctly label every AWS resource. Fundamentally they shouldn’t have to. 
           <details><summary>Details</summary>
-          <a href="https://github.com/GorillaStack/auto-tag">Public Repository</a>
+          <a href="https://github.com/GorillaStack/auto-tag">Public Documentation</a>
           <ul>
-            <li>As soon aa user creates a resource supported by AutoTag (such as EC2 instances, IAM users, IAM roles, RDS instances, S3 buckets, EMR clusters, VPCs, etc), AutoTag will automatically apply up to 3 new tags: C (Resource Owner) + T (Resource Creation Datetime) + I (Resource Invoked by what other resource).</li>
+            <li>As soon as a user creates a resource supported by AutoTag (such as EC2 instances, IAM users, IAM roles, RDS instances, S3 buckets, EMR clusters, VPCs, etc), AutoTag will automatically apply up to 3 new tags: C (Resource Owner) + T (Resource Creation Datetime) + I (Resource Invoked by what other resource).</li>
           </ul> 
           </details></p>
         </li>
@@ -52,6 +52,33 @@ experience:
           <a href="https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-aws/welcome.html">Public Documentation</a>
           <ul>
             <li>WIP</li>
+          </ul> 
+          </details></p>
+        </li>
+
+        <li>
+          <b>AWS Sagemaker Auto Stop</b>
+          <p>Sagemaker is the second largest cost in our AWS accounts. This solution auto-shutdown both SageMaker Notebook and SageMaker Studio instances when they are idle for 1 hour. 
+          <details><summary>Details</summary>
+          <a href="https://github.com/aws-samples/amazon-sagemaker-notebook-instance-lifecycle-config-samples/blob/master/scripts/auto-stop-idle/autostop.py">Public Documentation</a>
+          <ul>
+            <li>A lifecycle configuration provides shell scripts that run either when a notebook instance is created or whenever it starts. The deployed lifecycle config will run the autostop.py module every 5 minutes on the backend. It will be making API calls to the Jupyter server and checking the kernel status for ‘idle’. ‘Idleness’ as defined by Jupyter team, means that no code is running (other activities such as opening a new notebook will also reset the idle timer).</li>
+          </ul> 
+          </details></p>
+        </li>
+
+      <p><b>EU Supply Chain Analytics FC Launch</b><br> 
+      The <a href="https://w.amazon.com/bin/view/EU_SC_FC_Launch_Transfer_Analytics/">EU SC FC Launch Team</a> manages the supply chain ramp up of new Amazon-owned FCs from zero to one.</p>
+      <ul>
+        <li>
+          <b>EU SC FC Launch Performance Dashboard</b>
+          <p>The EU SC FC Launch Performance Dashboard is a “One Stop Shop” metrics compilation to provide a user friendly interface and visualizations of new FC’s ramp up actuals vs. wk-1/locked S&OP plans.
+          <details><summary>Details</summary>
+          <a href="https://eu-west-1.quicksight.aws.amazon.com/sn/accounts/764946308314/dashboards/32833b51-28e3-4576-92ac-a756ce108c6c">Internal Dashboard</a>
+          <ul>
+            <li>The EU SC FC Launch Performance Dashboard is a “One Stop Shop” metrics compilation to provide a user friendly interface and visualizations of new FC’s ramp up actuals vs. wk-1/locked S&OP plans;</li>
+            <li>For each FC and Week combination there’re a different number of possible Flows and Subflows. For instance, as the main flow: Crossdock Transfer In, Inventory, Manual Transfer In, New Vendor Freight, New Workable Demand, Not Yet Received (FC Receive Correction), Orders Cancelled/ Confirmed/ Received/ Submitted, Pod Transfer In, Proactive Transfer In, Reactive Transfer In all have a respective subflow related to the total number of units drilled down by: Total Quantity, Quantity FBA and Quantity AMZN (Total Quantity = FBA + AMZN),</li>
+            <li>The dashboard has 7 main metric tabs (📈 TIB, NTSI, NVF, POD, INV, NWD and ORD), a summary report tab (📝 RPT), an FC comparison tab (🆚  VS) and finally a tab dedicated to our team contact information and extract/ load job details (👨‍💻 INFO).</li>
           </ul> 
           </details></p>
         </li>
