@@ -33,10 +33,11 @@ experience:
       <ul>
         <li>
           <b>Why Spread is Biased & How to Overcome it: Spread Bias</b>
-          <p>Development of a new metric: Spread Bias. A complementary metric to FC Spread (how many FCs on average an ASIN is sent to). Mathematically, it’s a weekly weighted average share of total volume cross-docked at each FC per ASIN. The more biased the volume is towards one particular FC, the more the spread bias will tend to 1. Reciprocally, the more evenly and the more FCs the volume is spread to, spread bias will tend towards 0.
+          <p>Development of a new metric: Spread Bias. A complementary metric to FC Spread (how many FCs on average an ASIN is sent to). 
           <details><summary>Details</summary>
           <a href="https://drive.corp.amazon.com/documents/mznjoao@/Archive/Docs/Why%20Spread%20is%20Biased%20and%20How%20to%20Overcome%20It%20-%20Spread%20Bias.html">Internal Documentation</a>
           <ul>
+            <li>Mathematically, it’s a weekly weighted average share of total volume cross-docked at each FC per ASIN. The more biased the volume is towards one particular FC, the more the spread bias will tend to 1. Reciprocally, the more evenly and the more FCs the volume is spread to, spread bias will tend towards 0;</li>
             <li>Spread Bias is [] x more correlated to deviations in Case Break than in FC Spread. Less Spread Bias leads to a more uniform FC level placement which, in turn, increases unique inventory and reduces the risk of TRB (constraint in outbound capacity);</li>
             <li>Semi-Automated Jupyter Notebook Code & Markdown paper with interactive .html python code preview and Plotly graphs, Placement Impact bridge with Pearson Correlation Analysis and SQL script for production use.</li>
           </ul> 
