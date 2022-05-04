@@ -89,6 +89,8 @@ experience:
           </details></p>
         </li>
 
+        <br>
+        
         <li>
           <b>EU SC FC Launch Performance Dashboard</b>
           <p>The EU SC FC Launch Performance Dashboard is a “One Stop Shop” metrics compilation to provide a user friendly interface and visualizations of new FC’s ramp up actuals vs. wk-1/locked S&OP plans.
