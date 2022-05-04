@@ -73,13 +73,26 @@ experience:
       The <a href="https://w.amazon.com/bin/view/EU_SC_FC_Launch_Transfer_Analytics/">EU SC FC Launch Team</a> manages the supply chain ramp up of new Amazon-owned FCs from zero to one.</p>
       <ul>
         <li>
+          <b>Pre-Launch TSO Max Capacity Alert & Automated CPT Closure</b>
+          <p>Automated control on pre-launch TSO assigments for new FC launches. Gets live TSO from RODEO and updates a Chime room based on the predefined FC processing capacity threshold for a given source FC, destination FC and CPT & applies a RTCT Closure once 95% TSO capacity is breached.
+          <details><summary>Details</summary>
+          <a href="https://gitlab.aws.dev/eu-sc-fc-launches-transfer-analytics-tech/max-tso-alert-rtct-closure">Internal Documentation</a>
+          <ul>
+            <li>Pre-launch TSO is only available for unique inventory stranded in the new FC while outbound systems are still not live. It allows for a better customer promise but is highly risky as it directly impacts customer experience if the FC processing capacity vs TSO assignments per CPT is inadequate;</li>
+            <li>There are 4 notification bins per CPT: 75-85%, 85-95%, 95-100% and +100%. The automated capping will trigger at +95%. In order to avoid triggering at every run, a log file is updated and only triggers the alert once per bin;</li>
+            <li>The script interacts with internal supply chain systems APIs to retrieve current arc assignments ready to be picked and arc scheduling and configurations to cap the CPT. Deployed on a EC2/ Amazon Linux 2 CloudDevDesktop and scheduled using cron (*/5 * * * *).</li>
+          </ul> 
+          </details></p>
+        </li>
+
+        <li>
           <b>EU SC FC Launch Performance Dashboard</b>
           <p>The EU SC FC Launch Performance Dashboard is a “One Stop Shop” metrics compilation to provide a user friendly interface and visualizations of new FC’s ramp up actuals vs. wk-1/locked S&OP plans.
           <details><summary>Details</summary>
           <a href="https://eu-west-1.quicksight.aws.amazon.com/sn/accounts/764946308314/dashboards/32833b51-28e3-4576-92ac-a756ce108c6c">Internal Dashboard</a>
           <ul>
             <li>The EU SC FC Launch Performance Dashboard is a “One Stop Shop” metrics compilation to provide a user friendly interface and visualizations of new FC’s ramp up actuals vs. wk-1/locked S&OP plans;</li>
-            <li>For each FC and Week combination there’re a different number of possible Flows and Subflows. For instance, as the main flow: Crossdock Transfer In, Inventory, Manual Transfer In, New Vendor Freight, New Workable Demand, Not Yet Received (FC Receive Correction), Orders Cancelled/ Confirmed/ Received/ Submitted, Pod Transfer In, Proactive Transfer In, Reactive Transfer In all have a respective subflow related to the total number of units drilled down by: Total Quantity, Quantity FBA and Quantity AMZN (Total Quantity = FBA + AMZN),</li>
+            <li>For each FC and Week combination there’re a different number of possible Flows and Subflows. For instance, as the main flow: Crossdock Transfer In, Inventory, Manual Transfer In, New Vendor Freight, New Workable Demand, Not Yet Received (FC Receive Correction), Orders Cancelled/ Confirmed/ Received/ Submitted, Pod Transfer In, Proactive Transfer In, Reactive Transfer In all have a respective subflow related to the total number of units drilled down by: Total Quantity, Quantity FBA and Quantity AMZN (Total Quantity = FBA + AMZN);</li>
             <li>The dashboard has 7 main metric tabs (📈 TIB, NTSI, NVF, POD, INV, NWD and ORD), a summary report tab (📝 RPT), an FC comparison tab (🆚  VS) and finally a tab dedicated to our team contact information and extract/ load job details (👨‍💻 INFO).</li>
           </ul> 
           </details></p>
