@@ -18,10 +18,10 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'João Santos currently works as a **Business Intelligence Engineer** for the EU Supply Chain Analytics Team at **Amazon**'
-    twitter: 'wowchemy'
+    description: 'João Santos currently works as a Business Intelligence Engineer for the EU Supply Chain Analytics Team at Amazon'
+    twitter: 'joao96santos'
   analytics:
-    google_analytics: 'G-PKYWNCBYH2'
+    google_analytics: 'G-Q251HLKTC7'
     baidu_tongji: ''
   verification:
     google: ''
