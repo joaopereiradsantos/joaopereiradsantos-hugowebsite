@@ -52,7 +52,9 @@ experience:
           <details><summary>Details</summary>
           <a href="https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-aws/welcome.html">Public Documentation</a>
           <ul>
-            <li>WIP</li>
+            <li>Simply tag the key as “AutoSchedule” and associate the respective scheduler value (i.e. Key = “AutoSchedule”; Value = “1130-only-stop”);</li>
+            <li>Schedule configurations are set using the AutoScheduler-ConfigTable on DynamoDB. A user can create a period (i.e. office-hours: starts at 09:00, ends at 17:00 during week days) and then create a schedule based on a single or multiple periods (i.e. using the previous office-hours period but adding the timezone: Europe/London);</li>
+            <li>Configuration setup also allows for vertical scaling: scale up or down based on the instance requirements (i.e. scale up an instance to t2.micro during weekends and scale down to t2.nano during the week).</li>
           </ul> 
           </details></p>
         </li>
@@ -63,7 +65,8 @@ experience:
           <details><summary>Details</summary>
           <a href="https://github.com/aws-samples/amazon-sagemaker-notebook-instance-lifecycle-config-samples/blob/master/scripts/auto-stop-idle/autostop.py">Public Documentation</a>
           <ul>
-            <li>A lifecycle configuration provides shell scripts that run either when a notebook instance is created or whenever it starts. The deployed lifecycle config will run the autostop.py module every 5 minutes on the backend. It will be making API calls to the Jupyter server and checking the kernel status for ‘idle’. ‘Idleness’ as defined by Jupyter team, means that no code is running (other activities such as opening a new notebook will also reset the idle timer).</li>
+            <li>A lifecycle configuration provides shell scripts that run either when a notebook instance is created or whenever it starts. The deployed lifecycle config will run the autostop.py module every 5 minutes on the backend;</li>
+            <li>It will be making API calls to the Jupyter server and checking the kernel status for ‘idle’. ‘Idleness’ as defined by Jupyter team, means that no code is running (other activities such as opening a new notebook will also reset the idle timer).</li>
           </ul> 
           </details></p>
         </li>
