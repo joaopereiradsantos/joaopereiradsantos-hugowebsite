@@ -45,11 +45,11 @@ footer:
   copyright:
     notice: |2-
       © {year} João Santos. This work is licensed under {license}. 
-      Served by <a href="https://app.netlify.com/sites/joaopereiradsantos/deploys" rel="nofollow"><img draggable="false" class="icon" src="https://api.netlify.com/api/v1/badges/49894693-309b-4d5c-9ec4-fe7f304b5b54/deploy-status" alt="Netlify Status" data-canonical-src="https://api.netlify.com/api/v1/badges/49894693-309b-4d5c-9ec4-fe7f304b5b54/deploy-status"></a>
+      <div style="text-align:center"<a href="https://app.netlify.com/sites/joaopereiradsantos/deploys" rel="nofollow"><img draggable="false" class="icon" src="https://api.netlify.com/api/v1/badges/49894693-309b-4d5c-9ec4-fe7f304b5b54/deploy-status" alt="Netlify Status" data-canonical-src="https://api.netlify.com/api/v1/badges/49894693-309b-4d5c-9ec4-fe7f304b5b54/deploy-status"></a></div>
     license:
-      enable: true
+      enable: false
       allow_derivatives: false
-      share_alike: true
+      share_alike: false
       allow_commercial: false
 
 # Localization
