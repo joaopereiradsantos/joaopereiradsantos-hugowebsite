@@ -1,5 +1,7 @@
 ---
 widget: people
+active: false
+
 headless: true  # This file represents a page section.
 
 # Order that this section appears on the page.
