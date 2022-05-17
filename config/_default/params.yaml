@@ -43,9 +43,7 @@ header:
 
 footer:
   copyright:
-    notice: |2-
-      © {year} João Santos. This work is licensed under {license}. 
-      <a href="https://app.netlify.com/sites/joaopereiradsantos/deploys" rel="nofollow"><img draggable="false" class="center" src="https://api.netlify.com/api/v1/badges/49894693-309b-4d5c-9ec4-fe7f304b5b54/deploy-status" alt="Netlify Status" data-canonical-src="https://api.netlify.com/api/v1/badges/49894693-309b-4d5c-9ec4-fe7f304b5b54/deploy-status"></a>
+    notice: '© {year} João Santos. This work is licensed under {license}.'
     license:
       enable: true
       allow_derivatives: false
