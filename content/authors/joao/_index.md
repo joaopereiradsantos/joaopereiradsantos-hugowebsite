@@ -19,9 +19,10 @@ bio:
 
 # Interests to show in About widget
 interests: |2-
-  João is the most experienced BI Engineer in our team and a reference point for all of us and Supply Chain at large.
-  <details><summary>Read More</summary>
-  He's knowledgeable, curious, effective and incredibly helpful. During my internship at Amazon I have had the opportunity to have him as my mentor. He has been supportive, motivating and has provided me great guidance in the process of transitioning to a permanent role. He has been acting as a de-facto manager of all the tech projects of the team and his help and contribution has always been precious. He has helped when I was stuck and assigned me clear tasks. He doesn't settle on "good enough" and often pushed me to work on my script, cleverly asking me to perform some actions that required, on the way, to address small shortcuts that had been taken. Working with João, I was impressed not only by his technical skills but also by his great talent as a menager and mentor.
+  Test
+  <details>
+    <summary>Details</summary>
+    Something small enough to escape casual notice.
   </details>
 
 # Education to show in About widget
