@@ -25,3 +25,4 @@ design:
   show_role: true
   # Show user's organizations/affiliations?
   show_organizations: true
+  ---
