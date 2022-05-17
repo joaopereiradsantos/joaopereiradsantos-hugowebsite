@@ -76,6 +76,24 @@ experience:
       The <a href="https://w.amazon.com/bin/view/EU_SC_FC_Launch_Transfer_Analytics/">EU SC FC Launch Team</a> manages the supply chain ramp up of new Amazon-owned FCs from zero to one. The team strives to support the overall S-Team goal of 10% YoY productivity improvement of new FCs by providing required IB and OB daily/weekly volumes to maximize new FC's operation effciency.</p>
       <br>
       <ul>
+
+        <li>
+          <b>Tech Project Manager & Mentor</b>
+          <p>Manage a team of 5+ BI interns by applying Agile project management methodologies (Scrum & Kanban) on <a href="https://app.asana.com/">Asana</a>. Enforce software development good practices (<a href="https://git-scm.com/">git</a> for version control, <a href="https://github.com/pyenv/pyenv">pyenv</a> for Python version management and <a href="https://python-poetry.org/">poetry</a> for Python packaging and dependency management). 
+          <details><summary>Details</summary>
+          <a href="https://app.asana.com/0/portfolio/1201494474767093/list">Internal Documentation</a>
+          <ul>
+            <li>Setup documentation and provide support for new tech users ramp-up;</li>
+            <li>Mentor and enpower BI interns for a successful career and experience;</li>
+            <li>Manage technical projects on Asana based on Project Managers (PM) requirements. Break down the problem statement, set-up tasks and assign relative priorities, due dates and estimated completion times. Code review the merge requests (MR), main branch merging and production deployment (CI/CD);</li>
+            <li>Impose a standardised code-style, formatter and linter (XML for SQL and <a href="https://github.com/psf/black">black</a> and <a href="https://flake8.pycqa.org/en/latest/">flake8</a> for IDE). Use of <a href="https://chaseonsoftware.com/most-common-programming-case-types/#snake_case">snake_case</a> for functions and variables and <a href="https://chaseonsoftware.com/most-common-programming-case-types/#pascalcase">PascalCase</a> for classes. Use of <a href="https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html">Google Style</a> for docstrings. TOML for configuration files to be read by humans, JSON for machines;</li>
+            <li>Enforce data pipelines documentation and <a href="https://pyramid.corp.amazon.com/">Pyramid</a> (internal tool as a scalable way of tracking the status and tracing upstream pipelines) enabled alerts for proactive monitoring and management of production-ready team pipelines.</li>
+          </ul> 
+          </details></p>
+        </li>
+
+        <br>
+
         <li>
           <b>Pre-Launch TSO Max Capacity Alert & Automated CPT Closure</b>
           <p>Automated control on pre-launch TSO assigments for new FC launches. Gets live TSO from RODEO, updates a Chime room based on the predefined FC processing capacity threshold for a given source FC, destination FC and CPT and applies a RTCT Closure once 95% TSO capacity is breached.
