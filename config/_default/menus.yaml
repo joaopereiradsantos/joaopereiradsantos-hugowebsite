@@ -25,7 +25,4 @@ main:
   - name: CV
     url: files/Joao_Santos_CV_2021_06_10.pdf
     weight: 70
-  - name: People
-    url: '#people'
-    weight: 80
 
