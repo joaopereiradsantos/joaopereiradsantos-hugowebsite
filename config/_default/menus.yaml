@@ -23,6 +23,6 @@ main:
     url: '#contact'
     weight: 60
   - name: CV
-    url: files/Joao_Santos_CV_2021_06_10.pdf
+    url: slides/uploads/resume.pdf
     weight: 70
 
