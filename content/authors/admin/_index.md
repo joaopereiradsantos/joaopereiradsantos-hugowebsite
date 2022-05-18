@@ -85,4 +85,4 @@ _Highlighted Courses: Process Strategy and Optimization; Process Dynamics and Co
 _Highlighted Certifications &  MOOC: AWS Certified Cloud Practitioner; Data Analyst with SQL Server by DataCamp; Complete Data Science Bootcamp 2020 by 365 Data Science; Process Mining Expert by Celonis._
 
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "static/uploads/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
+<!-- {{< icon name="download" pack="fas" >}} Download my {{< staticref "static/uploads/resume.pdf" "newtab" >}}resumé{{< /staticref >}}. -->
