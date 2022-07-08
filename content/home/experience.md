@@ -35,6 +35,20 @@ experience:
       Ownership and management of 2 AWS accounts, including 2 Redshift clusters.</p>
       <br>
       <ul>
+
+        <li>
+          <b>AWS EUSOPDW CloudWatch Dashboard</b>
+          <p>Leverage the power of CloudWatch metrics into EUSOPDW Redshift cluster to develop the EUSOPDW CloudWatch Dashboard. Using CloudWatch metrics for Amazon Redshift, we can get information about the cluster's health and performance up to the node level. 
+          <details><summary>Details</summary>
+          <a href="https://w.amazon.com/bin/view/EU_SC_ANALYTICS_BI_ADMIN/Redshift_Cloudwatch/">Internal Dashboard</a>
+          <ul>
+            <li>EUSOPDW CloudWatch Dashboard monitors the real time performance of EUSOPDW cluster across multiple metrics, e.g. the average query completion time, the number of queries running or the number of queries waiting.</li>
+            <li>The EU SC Analytics BI Admin Team have also implemented 4 metric alarms in order to proactively act on cluster issues, e.g. high backlog or unusual CPU utilization.</li>
+            <li>The Dashboard is divided into 3 main section: 1 – Overview: Focus on 3 main metrics (WLMQueryDuration, WLMRunningQueries and WLMQueueLength) on the 3 main WLM Queues (admin, allusers and planners); 2 – Performance: Focus mainly on CPU utilization per node, network and I/O rates, open DB connections and query stage share; 3 – WLM Performance and Latency Performance: Similar to the Overview section but with more metric details and all the existing WLM Queues and latency granularity (short, medium and long).</li>
+          </ul> 
+          </details></p>
+        </li>
+
         <li>
           <b>AWS Auto Tag</b>
           <p>“Tag Early, Tag, Often”. Automatically tagging resources greatly improves the ease of cost allocation and governance by the BI Admin Team. It is a challenge to get users to remember to and correctly label every AWS resource. Fundamentally they shouldn’t have to. 
