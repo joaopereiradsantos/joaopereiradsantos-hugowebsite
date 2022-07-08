@@ -37,6 +37,18 @@ experience:
       <ul>
 
         <li>
+          <b>EXTREME: Excel to Redshift Migration Engine</b>
+          <p>A Native AWS solution that automatically converts your .xlsx files into Redshift local tables seamlessly and quickly while additionally inferring the most frugal table definition based on the present data.
+          <details><summary>Details</summary>
+          <a href="https://w.amazon.com/bin/view/EXTREME/">Internal Documentation</a>
+          <ul>
+            <li>EXTREME is centered around a micro-service orchestration workflow using AWS Step Functions. It was designed for the best user-experience by only requiring minimal knowledge on basic tools and functionalities using Excel and Network Shared Folders. Drop your Excel file inside the appropriate sub folder, wait and get notified on the EXTREME Chime room once the table has been Created or Updated on EUSOPDW.</li>
+            <li><img src="extreme_userdiag.png.jpg" alt="EXTREME User Architecture"></li>
+          </ul> 
+          </details></p>
+        </li>
+
+        <li>
           <b>AWS EUSOPDW CloudWatch Dashboard</b>
           <p>Leverage the power of CloudWatch metrics into EUSOPDW Redshift cluster to develop the EUSOPDW CloudWatch Dashboard. Using CloudWatch metrics for Amazon Redshift, we can get information about the cluster's health and performance up to the node level. 
           <details><summary>Details</summary>
