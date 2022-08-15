@@ -121,6 +121,19 @@ experience:
         <br>
 
         <li>
+          <b>Pod Selection Algorithm</b>
+          <p>. 
+          <details><summary>Details</summary>
+          <a href="https://app.asana.com/0/portfolio/1201494474767093/list">Internal Documentation</a>
+          <ul>
+            <li>.</li>
+          </ul> 
+          </details></p>
+        </li>
+
+        <br>
+
+        <li>
           <b>Pre-Launch TSO Max Capacity Alert & Automated CPT Closure</b>
           <p>Automated control on pre-launch TSO assigments for new FC launches. Gets live TSO from RODEO, updates a Chime room based on the predefined FC processing capacity threshold for a given source FC, destination FC and CPT and applies a RTCT Closure once 95% TSO capacity is breached.
           <details><summary>Details</summary>
