@@ -19,11 +19,10 @@ bio:
 # Interests to show in About widget
 interests:
   - Cloud Computing (AWS)
+  - Data Engineering
   - Microservices
   - Process Optimization
-  - Machine Learning
   - Data Visualization
-  - Data Mining
 
 # Education to show in About widget
 education:
