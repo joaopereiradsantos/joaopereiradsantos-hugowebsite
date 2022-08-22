@@ -58,6 +58,8 @@ experience:
             <li>EUSOPDW CloudWatch Dashboard monitors the real time performance of EUSOPDW cluster across multiple metrics, e.g. the average query completion time, the number of queries running or the number of queries waiting.</li>
             <li>The EU SC Analytics BI Admin Team have also implemented 4 metric alarms in order to proactively act on cluster issues, e.g. high backlog or unusual CPU utilization.</li>
             <li>The Dashboard is divided into 3 main section: 1 – Overview: Focus on 3 main metrics (WLMQueryDuration, WLMRunningQueries and WLMQueueLength) on the 3 main WLM Queues (admin, allusers and planners); 2 – Performance: Focus mainly on CPU utilization per node, network and I/O rates, open DB connections and query stage share; 3 – WLM Performance and Latency Performance: Similar to the Overview section but with more metric details and all the existing WLM Queues and latency granularity (short, medium and long).</li>
+            <img src="https://joaopereiradsantos.com/uploads/rs_cloudwatch_1.png" alt="Redshift CloudWatch 1">
+            <img src="https://joaopereiradsantos.com/uploads/rs_cloudwatch_2.png" alt="Redshift CloudWatch 2">
           </ul> 
           </details></p>
         </li>
