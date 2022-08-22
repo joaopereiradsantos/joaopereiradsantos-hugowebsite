@@ -45,6 +45,14 @@ experience:
             <li>EXTREME is centered around a micro-service orchestration workflow using AWS Step Functions. It was designed for the best user-experience by only requiring minimal knowledge on basic tools and functionalities using Excel and Network Shared Folders. Drop your Excel file inside the appropriate sub folder, wait and get notified on the EXTREME Chime room once the table has been Created or Updated on EUSOPDW.</li>
             <li><img src="https://joaopereiradsantos.com/uploads/extreme_userdiag.png" alt="EXTREME User Architecture"></li>
             <li><img src="https://joaopereiradsantos.com/uploads/stepfunctions_graph.png" alt="EXTREME SF Diagram"></li>
+            <div class="row">
+              <div class="column">
+                <img src="https://joaopereiradsantos.com/uploads/extreme_userdiag.png">
+              </div>
+              <div class="column">
+                <img src="https://joaopereiradsantos.com/uploads/extreme_userdiag.png">
+              </div>
+            </div> 
           </ul> 
           </details></p>
         </li>
