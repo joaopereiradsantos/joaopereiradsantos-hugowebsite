@@ -127,8 +127,8 @@ experience:
           <b>Pod Selection Algorithm</b>
           <p>Output a list of pods to transfer based on a set of inputs, business criteria (objective functions) and hard operational constrains. The objective functions currently set are: Cube (SUM volume [ft2] of each unit in a pod); Uniqueness (Count of distinct ASINs in a pod that are unique relative to their presence within their respective marketplace); Quantity (SUM units in a pod). 
           <details><summary>Details</summary>
-          <a href="https://gitlab.aws.dev/eu-sc-fc-launches-transfer-analytics-tech/pod-selection-algorithm">Internal Repository</a>
-          <a href="https://drive.corp.amazon.com/documents/mznjoao@/Archive/EUSCAnalyticsFCLaunch_PSA.pdf">Internal Documentation</a>
+          <p><a href="https://gitlab.aws.dev/eu-sc-fc-launches-transfer-analytics-tech/pod-selection-algorithm">Internal Repository</a>
+          <p><a href="https://drive.corp.amazon.com/documents/mznjoao@/Archive/EUSCAnalyticsFCLaunch_PSA.pdf">Internal Documentation</a>
           <ul>
             <li>The core modeling started as a Nested Sorting optimization but migrated to a Integer Linear Programming (ILP) optimization using the FICO Xpress Solver. While the core mathematical concepts remain, as opposed to achieve a single optimal output, PSA uses a weights tunning approach for every new set of inputs simulating 1k+ data points for different weight and objective function combinations;</li>
             <li>While the previous production model (SPOCK) produced an overall weekly weighted average of 33 cube per pod (CPP), PSA generated 36 CPP (~10% improvement). Fullness of all pods transferred is on average 105% instead of 90%. Similarly, the actual weekly weighted average units per pod (UPP) was 550 while PSA’s UPP equaled 420 (~15% decrease), which reduces OB NWA because of less inventory units. PSA really stands out when it comes to unique inventory: SPOCK logic transferred 140k unique units, totaling 7% with respect to the total transferred units, while PSA transferred 45k, 2% versus the total transferred units (500bps reduction).</li>
