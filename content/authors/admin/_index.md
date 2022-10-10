@@ -72,12 +72,9 @@ email: ''
 highlight_name: true
 ---
 
-João Pereira dos Santos is a **Chemical Engineer** specialized in **Processes & Product** from Faculdade de Engenharia da Universidade do Porto ([FEUP](https://sigarra.up.pt/feup/en)) currently working as a **Business Intelligence Engineer** for the EU Supply Chain Analytics Team at **Amazon** - world’s largest online marketplace, AI assistant provider, live-streaming platform and cloud computing platform as measured by revenue and market capitalization.
+João Santos is a **Business Intelligence Engineer** for the EU Supply Chain Analytics Team at **Amazon** - world’s largest online marketplace and cloud computing platform.
 
-During his degree, he won the [2018 Academic Games of Engineering by AEFEUP](https://www.facebook.com/ParalabPT/posts/1731759456861039): a group project aiming at designing a continuous hydrothermal liquefaction (HTL) biomass processing unit for Paralab, SA; and was also 3x Team Leader at the European BEST Engineering Competition Challenge - Team Design: a practical test consisting on the construction of a prototype with limited materials and low cost to solve a proposed problem.
-
-As a **Data Science** enthusiast, João is intellectually curious and eager to learn and apply new Data-Oriented skill sets into daily challenges. During his **Master Thesis** Project at **Amkor Technology** he wrote  _[Qualitative and Quantitative Analysis in Copper Electroplating Baths](https://hdl.handle.net/10216/132835)_, where KPIs for Chemical Process Control were implemented on a Microsoft Power BI Dashboard. He started competing in beginner [Kaggle Competitions](https://www.kaggle.com/code/joaopereiradsantos/are-you-too-old-for-data-science/notebook) and participated on the [2020 EUREKAthon - Challenge Data for Zero Hunger](https://www.eurekathon.com/2020/index.html): a data-driven competition that addresses societal issues associated with sustainable development goals, later winning [Hack@Home III by Tech@Catolica - A Second Wave Forecast of COVID-19 cases](https://github.com/joaopereiradsantos/covid19-second-wave-forecast) using **Machine Learning** time series forecasting models like Auto-ARIMA, FB Prophet, XGBoost and Neural Networks.
-
+Expert in **Data Engineering** (Batch ETL/ ELT Pipelines and Modeling, Data Lake/ Warehousing, Orchestration, Quality/ Testing), **Amazon Web Services (AWS)** (Data Architecture, DevOps, Serverless, Linux/ Unix) and **Business Intelligence** (Data Preprocessing, Dashboarding, Reporting, Monitoring)
 
 _Highlighted Courses: Process Strategy and Optimization; Process Dynamics and Control; Oil Refining and Petrochemistry; Industrial Informatics II; Entrepreneurship and Innovation; Engineering Project._
 
