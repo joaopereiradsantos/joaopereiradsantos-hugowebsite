@@ -39,18 +39,18 @@ feature:
 # Place your custom SVG icon in `assets/media/icons/`.
 # Reference the SVG icon name (without `.svg` extension) in the `icon` field.
 # For example, reference `assets/media/icons/xyz.svg` as `icon: 'xyz'`
+  - icon: "intj-architect-s1-male"
+    icon_pack: "custom"
+    name: "<a href="https://www.16personalities.com/intj-personality/">Assertive Architect</a>"
+    description: "Assertive Architects are Introverted, Intuitive, Thinking, Judging and Assertive. These thoughtful tacticians love perfecting the details of life, applying creativity and rationality. " 
+
   - icon: "role-analyst"
     icon_pack: "custom"
     name: "Analyst"
-    description: "Analyst Desc"
-
-  - icon: "intj-architect-s1-male"
-    icon_pack: "custom"
-    name: "Architect"
-    description: "Architect Desc" 
+    description: "Analysts embrace rationality and impartiality, excelling in intellectual debates and scientific or technological fields. They are fiercely independent, open-minded, and strong-willed. "
 
   - icon: "strategy-confident-individualism-analyst"
     icon_pack: "custom"
-    name: "Strat"
-    description: "Strat Desc"
+    name: "Confident Individualism"
+    description: "Confident Individualists prefer doing things alone, choosing to rely on their own skills and instincts instead of seeking contact with other people. They know what they are good at. "
 ---
