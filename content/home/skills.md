@@ -43,4 +43,14 @@ feature:
     icon_pack: "custom"
     name: "Analyst"
     description: "Analyst Desc"
+
+  - icon: "intj-architect-s1-male"
+    icon_pack: "custom"
+    name: "Architect"
+    description: "Architect Desc" 
+
+  - icon: "strategy-confident-individualism-analyst"
+    icon_pack: "custom"
+    name: "Strat"
+    description: "Strat Desc"
 ---
