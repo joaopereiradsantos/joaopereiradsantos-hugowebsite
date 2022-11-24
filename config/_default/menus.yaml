@@ -7,6 +7,9 @@ main:
   - name: Home
     url: '#about'
     weight: 10
+  - name: MBTI
+    url: '#skills'
+    weight: 19
   - name: Experience
     url: '#experience'
     weight: 20

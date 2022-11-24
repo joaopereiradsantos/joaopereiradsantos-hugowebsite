@@ -8,10 +8,10 @@ active: true
 headless: true
 
 # Order that this section appears on the page.
-weight: 30
+weight: 29
 
-title: Skills
-subtitle:
+title: MBTI
+subtitle: Myers–Briggs Type Indicator
 
 # Showcase personal skills or business features.
 # - Add/remove as many `feature` blocks below as you like.
