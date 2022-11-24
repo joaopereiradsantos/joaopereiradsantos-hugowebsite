@@ -10,8 +10,8 @@ headless: true
 # Order that this section appears on the page.
 weight: 29
 
-title: MBTI
-subtitle: Myers–Briggs Type Indicator
+title: Personality
+subtitle: Myers–Briggs Type Indicator (MBTI)
 
 # Showcase personal skills or business features.
 # - Add/remove as many `feature` blocks below as you like.
@@ -41,7 +41,7 @@ feature:
 # For example, reference `assets/media/icons/xyz.svg` as `icon: 'xyz'`
   - icon: "intj-architect-s1-male"
     icon_pack: "custom"
-    name: "<a href="https://www.16personalities.com/intj-personality/">Assertive Architect</a>"
+    name: "Assertive Architect"
     description: "Assertive Architects are Introverted, Intuitive, Thinking, Judging and Assertive. These thoughtful tacticians love perfecting the details of life, applying creativity and rationality. " 
 
   - icon: "role-analyst"
