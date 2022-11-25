@@ -55,4 +55,4 @@ feature:
     description: "Confident Individualists prefer doing things alone, choosing to rely on their own skills and instincts instead of seeking contact with other people. They know what they are good at. "
 ---
 
-João Santos is a **Business Intelligence Engineer** for the EU Supply Chain Analytics Team at **Amazon** - world’s largest online marketplace and cloud computing platform.
+<a href="https://www.16personalities.com/profiles/83c7dd87d4e0c/">16personalities</a>
