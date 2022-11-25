@@ -52,5 +52,7 @@ feature:
   - icon: "strategy-confident-individualism-analyst"
     icon_pack: "custom"
     name: "Confident Individualism"
-    description: "Confident Individualists prefer doing things alone, choosing to rely on their own skills and instincts instead of seeking contact with other people. They know what they are good at. <a href="https://www.16personalities.com/articles/strategies-confident-individualism/">Read More.</a>"
+    description: "Confident Individualists prefer doing things alone, choosing to rely on their own skills and instincts instead of seeking contact with other people. They know what they are good at. "
 ---
+
+João Santos is a **Business Intelligence Engineer** for the EU Supply Chain Analytics Team at **Amazon** - world’s largest online marketplace and cloud computing platform.
