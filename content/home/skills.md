@@ -42,17 +42,17 @@ feature:
   - icon: "intj-architect-s1-male"
     icon_pack: "custom"
     name: "Assertive Architect"
-    description: "Assertive Architects are Introverted, Intuitive, Thinking, Judging and Assertive. These thoughtful tacticians love perfecting the details of life, applying creativity and rationality. " 
+    description: "Assertive Architects are Introverted, Intuitive, Thinking, Judging and Assertive. These thoughtful tacticians love perfecting the details of life, applying creativity and rationality." 
 
   - icon: "role-analyst"
     icon_pack: "custom"
     name: "Analyst"
-    description: "Analysts embrace rationality and impartiality, excelling in intellectual debates and scientific or technological fields. They are fiercely independent, open-minded, and strong-willed. "
+    description: "Analysts embrace rationality and impartiality, excelling in intellectual debates and scientific or technological fields. They are fiercely independent, open-minded, and strong-willed."
 
   - icon: "strategy-confident-individualism-analyst"
     icon_pack: "custom"
     name: "Confident Individualism"
-    description: "Confident Individualists prefer doing things alone, choosing to rely on their own skills and instincts instead of seeking contact with other people. They know what they are good at. "
+    description: "Confident Individualists prefer doing things alone, choosing to rely on their own skills and instincts instead of seeking contact with other people. They know what they are good at."
 ---
 
 <a href="https://www.16personalities.com/profiles/83c7dd87d4e0c/">16personalities</a>
