@@ -58,7 +58,7 @@ social:
     icon_pack: fab
     link: https://www.kaggle.com/joaopereiradsantos
   - icon: chess
-    icon_pack: fab
+    icon_pack: fa
     link: https://www.chess.com/member/joaopereiradsantos
 
 # Link to a PDF of your resume/CV.
