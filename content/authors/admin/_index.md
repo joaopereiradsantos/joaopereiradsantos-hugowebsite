@@ -6,7 +6,7 @@ title: João Santos
 superuser: true
 
 # Role/position/tagline
-role: Business Intelligence Engineer, EU Supply Chain Analytics
+role: Senior Business Intelligence Engineer II, EU Supply Chain Analytics
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -75,7 +75,7 @@ email: ''
 highlight_name: true
 ---
 
-João Santos is a **Business Intelligence Engineer** for the EU Supply Chain Analytics Team at **Amazon** - world’s largest online marketplace and cloud computing platform.
+João Santos is a **Senior BI Engineer** for the EU Supply Chain Analytics Team at **Amazon** - world’s largest online marketplace and cloud computing platform.
 
 Expert in **Data Engineering** (Batch ETL/ ELT Pipelines and Modeling, Data Lake/ Warehousing, Orchestration, Quality/ Testing), **Amazon Web Services (AWS)** (Data Architecture, DevOps, Serverless, Linux/ Unix) and **Business Intelligence** (Data Preprocessing, Dashboarding, Reporting, Monitoring)
 
