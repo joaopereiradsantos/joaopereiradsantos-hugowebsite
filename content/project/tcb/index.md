@@ -1,17 +1,18 @@
 ---
-title: Tennis (Consensus) Betting Bot - From £1 to £25k
-summary: Automated Web Scraper and Value Betting Algorithm
+title: "Tennis (Consensus) Betting Bot - The Theoretical Rollercoaster: £1 to £25k 🚀 (and its Downfall 💀)"
+summary: Automated AWS Web Scraper and Consensus-based Positive Expected Value
 tags:
 - Betting Bot
 - Web Scraping
-- Neural Network
-date: "2021-10-01T00:00:00Z"
+- AWS Architecture
+- Python
+date: "2023-08-03T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
 
 image:
-  caption: Photo by Ryan Searle on Unsplash
+  caption: Photo by Maurits Bausenhart on Unsplash
   focal_point: Smart
 
 links:
@@ -32,7 +33,29 @@ url_video: ""
 slides: ''
 ---
 
-# Test DF
+# Table of contents
+1. [Introduction](#introduction)
+2. [Some paragraph](#paragraph1)
+    1. [Sub paragraph](#subparagraph1)
+3. [Another paragraph](#paragraph2)
+
+## This is the introduction <a name="introduction"></a>
+Some introduction text, formatted in heading 2 style
+
+## Some paragraph <a name="paragraph1"></a>
+The first paragraph text
+
+### Sub paragraph <a name="subparagraph1"></a>
+This is a sub paragraph, formatted in heading 3 style
+
+## Another paragraph <a name="paragraph2"></a>
+The second paragraph text
+
+# Tennis (Consensus) Betting Bot
+
+## Simulation Results
+### Theoretical (No Bookmaker Restrictions)
+#### Flat Betting
 
 Flat Betting (Assuming a fixed stake = 1u):
 
@@ -60,12 +83,14 @@ Flat Betting (Assuming a fixed stake = 1u):
 | 0.095 |        89.62 |     347 |   25.54 |      53.03 |      26.41 |     63.78 |
 | 0.100 |        85.93 |     306 |   27.75 |      53.59 |      26.13 |     69.55 |
 
-![flat_bet_teo](./pictures/flat_bet_teo.png)
+<details><summary>report - click this</summary>
 
-![diagram](./pictures/diagram.gif)
-
-![dia-removebg-preview](./pictures/dia-removebg-preview.png)
-
+``` // opening 
+cpu_adam ............... [NO] ....... [OKAY]
+cpu_adagrad ............ [NO] ....... [OKAY]
+fused_adam ............. [NO] ....... [OKAY]
+``` // closing
+</details>
 
 ## License
 [MIT](https://choosealicense.com/licenses/apache-2.0/)
