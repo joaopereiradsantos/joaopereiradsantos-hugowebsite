@@ -62,7 +62,7 @@ Flat Betting (Assuming a fixed stake = 1u):
 
 ![flat_bet_teo](./pictures/flat_bet_teo.png)
 
-![diagram](./pictures/diagram.png)
+![diagram](./pictures/diagram.gif)
 
 
 ## License
