@@ -64,7 +64,7 @@ Flat Betting (Assuming a fixed stake = 1u):
 
 ![diagram](./pictures/diagram.gif)
 
-![dia](./pictures/dia.png)
+![dia-removebg-preview](./pictures/dia-removebg-preview.png)
 
 
 ## License
