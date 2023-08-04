@@ -38,7 +38,7 @@ slides: ''
    1. [An Illustrative Case - Halle ATP 500](#introduction1)
    2. [Learning (Quickly) from the Past](#introduction2)
    3. [A Fusion of Strategies](#introduction3)
-2. [Literature Review](#paragraph1)
+2. [Literature Review](#lr)
 3. [Methodology](#paragraph1)
     1. [Sub paragraph](#subparagraph1)
 4. [Results](#results)
@@ -57,9 +57,9 @@ slides: ''
 5. [Discussion](#discussion)
 
 ## Introduction <a name="introduction"></a>
-One year since the debut of the Tennis Betting Bot (TBB), a new approach has emerged, rooted in bookmakers' consensus, signifying a noteworthy advancement.
+One year since the debut of the [Tennis Betting Bot (TBB)](https://www.joaopereiradsantos.com/project/tbb/), a new approach has emerged, rooted in bookmakers' consensus, signifying a noteworthy advancement.
 #### An Illustrative Case - Halle ATP 500 <a name="introduction1"></a>
-In a recent Halle ATP 500 match between Richard Gasquet and Jannik Sinner, bookmakers favored Gasquet with average decimal odds of approximately 5.00, peaking at 5.39 on Pinnacle. Conversely, TBB projected a 41.15% chance of a Gasquet victory, equivalent to decimal odds of 2.43. Despite Gasquet's eventual loss, this marked a notable 116% difference, prompting a pertinent question: Could TBB's projections surpass those of 25 specialized bookmakers on the long term?
+In a recent Halle ATP 500 match between Richard Gasquet and Jannik Sinner, bookmakers favored Gasquet with average decimal odds of approximately 5.00, peaking at 5.39 on Pinnacle. Conversely, TBB projected a 41.15% chance of a Gasquet victory, equivalent to decimal odds of 2.43. Despite Gasquet's eventual loss, this marked a notable 116% difference, prompting a pertinent question: Could TBB's projections surpass those of 25 specialized bookmakers on the long-term?
 
 #### Learning (Quickly) from the Past <a name="introduction2"></a>
 Reflecting on the prior TBB version driven by machine learning (ML), the 2023 grass season exposed its impracticality. Swiftly changing inputs hindered an effective ML pipeline. The fast changes in information weren't caught quickly enough, making it hard to create a good feedback loop for adjusting the ML system's settings. This resulted in a devastating -660% return on investment (ROI).
@@ -68,6 +68,13 @@ Reflecting on the prior TBB version driven by machine learning (ML), the 2023 gr
 Inspired by "Beating the Bookies with their own Numbers" by Kaunitz, Shenjun, and Kreiner, the new Tennis (Consensus) Betting Bot (TCBB) embraces a symbiotic approach. It capitalizes on publicly available odds from various bookmakers to find bets with mispriced odds and positive expected value.
 
 Ahead, we delve into the mechanics of the Tennis (Consensus) Betting Bot, tracing its evolution, strategies, and efficacy across the bookmaker landscape. 
+
+## Literature Review <a name="lt"></a>
+In the landscape of sports prediction and betting, two pivotal articles have left a substantial impact. ["The Gambler Who Cracked the Horse-Racing Code"](https://www.bloomberg.com/news/features/2018-05-03/the-gambler-who-cracked-the-horse-racing-code) underscores the power of data-driven insights in horse racing betting, while ["Beating the Bookies with Their Own Numbers - and How the Online Sports Betting Market is Rigged"](https://arxiv.org/vc/arxiv/papers/1710/1710.02824v1.pdf) has directly influenced the creation of The Tennis (Consensus) Betting Bot (TCBB), which employs a comparable approach but focuses on tennis.
+
+"Beating the Bookies with Their Own Numbers" introduces a unique methodology that taps into implicit probability information within public odds to uncover mispriced bets. Rigorous simulations spotlight inefficiencies within the football betting market, suggesting the potential for sustained profitability.
+
+While "The Gambler Who Cracked the Horse-Racing Code" underscores analytics' impact in a specific realm, the insights from "Beating the Bookies with Their Own Numbers" have propelled TCBB to challenge conventions, applying a similar approach to tennis. The article's influence serves as both a catalyst and a cautionary tale, prompting a deeper exploration of dynamics within the sports betting arena.
 
 ## Results <a name="results"></a>
 
