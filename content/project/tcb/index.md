@@ -34,37 +34,40 @@ slides: ''
 ---
 # Tennis (Consensus) Betting Bot
 ## Table of contents
-- [Tennis (Consensus) Betting Bot](#tennis-consensus-betting-bot)
-  - [Table of contents](#table-of-contents)
-  - [Introduction ](#introduction-)
-    - [An Illustrative Case - Halle ATP 500 ](#an-illustrative-case---halle-atp-500-)
-    - [Learning (Quickly) from the Past ](#learning-quickly-from-the-past-)
-    - [A Fusion of Strategies ](#a-fusion-of-strategies-)
-  - [Some paragraph ](#some-paragraph-)
-    - [Sub paragraph ](#sub-paragraph-)
-  - [Results ](#results-)
-    - [Uncontrained Simulations ](#uncontrained-simulations-)
-    - [Constrained Simulations ](#constrained-simulations-)
-  - [License](#license)
+1. [Introduction](#introduction)
+   1. [An Illustrative Case - Halle ATP 500](#introduction1)
+   2. [Learning (Quickly) from the Past](#introduction2)
+   3. [A Fusion of Strategies](#introduction3)
+2. [Literature Review](#paragraph1)
+3. [Methodology](#paragraph1)
+    1. [Sub paragraph](#subparagraph1)
+4. [Results](#results)
+   1. [Unconstrained](#unconstrained)
+      1. [Flat Betting](#unconstrained_fb)
+      2. [Full-Kelly](#paragraph2)
+      3. [Half-Kelly](#paragraph2)
+      4. [Quarter-Kelly](#paragraph2)
+      5. [Eight-Kelly](#paragraph2)
+   2. [Constrained](#constrained)
+      1. [Flat Betting](#paragraph2)
+      2. [Full-Kelly](#paragraph2)
+      3. [Half-Kelly](#paragraph2)
+      4. [Quarter-Kelly](#paragraph2)
+      5. [Eight-Kelly](#paragraph2)
+5. [Discussion](#discussion)
 
 ## Introduction <a name="introduction"></a>
 One year since the debut of the Tennis Betting Bot (TBB), a new approach has emerged, rooted in bookmakers' consensus, signifying a noteworthy advancement.
-### An Illustrative Case - Halle ATP 500 <a name="introduction1"></a>
+#### An Illustrative Case - Halle ATP 500 <a name="introduction1"></a>
 In a recent Halle ATP 500 match between Richard Gasquet and Jannik Sinner, bookmakers favored Gasquet with average decimal odds of approximately 5.00, peaking at 5.39 on Pinnacle. Conversely, TBB projected a 41.15% chance of a Gasquet victory, equivalent to decimal odds of 2.43. Despite Gasquet's eventual loss, this marked a notable 116% difference, prompting a pertinent question: Could TBB's projections surpass those of 25 specialized bookmakers on the long term?
 
-### Learning (Quickly) from the Past <a name="introduction2"></a>
+#### Learning (Quickly) from the Past <a name="introduction2"></a>
 Reflecting on the prior TBB version driven by machine learning (ML), the 2023 grass season exposed its impracticality. Swiftly changing inputs hindered an effective ML pipeline. The fast changes in information weren't caught quickly enough, making it hard to create a good feedback loop for adjusting the ML system's settings. This resulted in a devastating -660% return on investment (ROI).
 
-### A Fusion of Strategies <a name="introduction3"></a>
+#### A Fusion of Strategies <a name="introduction3"></a>
 Inspired by "Beating the Bookies with their own Numbers" by Kaunitz, Shenjun, and Kreiner, the new Tennis (Consensus) Betting Bot (TCBB) embraces a symbiotic approach. It capitalizes on publicly available odds from various bookmakers to find bets with mispriced odds and positive expected value.
 
 Ahead, we delve into the mechanics of the Tennis (Consensus) Betting Bot, tracing its evolution, strategies, and efficacy across the bookmaker landscape. 
-
-## Some paragraph <a name="paragraph1"></a>
-The first paragraph text
-
-### Sub paragraph <a name="subparagraph1"></a>
-This is a sub paragraph, formatted in heading 3 style
 
 ## Results <a name="results"></a>
 
