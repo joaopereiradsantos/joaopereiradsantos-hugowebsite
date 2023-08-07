@@ -394,9 +394,11 @@ $$
 
 We pursued this logical approach to establish our betting strategy, opting to make a wager whenever the highest odds provided for a specific outcome satisfied the subsequent inequality:
 
+{{< math >}}
 $$
 \max(Ω) > \frac{1}{P_{\text{consensus}} - n} \tag{3}
 $$
+{{< /math >}}
 
 As the $n$ parameter increases, the expected value of each bet grows, but the pool of games available for betting shrinks. This effect stems from the stricter condition, resulting in fewer bookmakers providing odds with significant margins. To identify an appropriate $n$ parameter, we evaluated simulated betting strategies over a range of values, spanning from 0.000 to 0.100. 
 
