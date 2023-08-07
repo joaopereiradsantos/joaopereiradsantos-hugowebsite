@@ -369,17 +369,19 @@ A fair bet has zero expected value when the bookmaker's odds are the opposite of
 
 An assessment of bookmakers' predictive accuracy was conducted using historical tennis match data. Closing odds for approximately 20,000 tennis matches held between June and August 2023 were obtained from [oddsportal.com](https://www.oddsportal.com/), with a focus on "Home-Away Full Time" outcomes (player A or player B win).
 
-To quantify accuracy, a consensus probability approach was employed. The consensus probability ($P_{\text{consensus}}$) was determined by calculating the inverse of the mean odds ($Ω$) favoring either player A or player B:
+To quantify accuracy, a consensus probability approach was employed. The consensus probability ({{< math >}}$P_{\text{consensus}}${{< /math >}}) was determined by calculating the inverse of the mean odds ({{< math >}}$Ω${{< /math >}}) favoring either player A or player B:
 
+{{< math >}}
 $$
 P_{\text{consensus}} = \frac{1}{\text{mean}(Ω)} \tag{1}
 $$
+{{< /math >}}
 
 
 The data was categorized into 80 bins based on consensus probabilities ranging from 0 to 1, in increments of 0.0125. Within each bin, two key metrics were computed:
 
-1. The average consensus probabilities at the closing of the matches. ($P_{\text{consensus}}$)
-2. The average accuracy in predicting match outcomes (player or player B win). ($P_{\text{real}}$)
+1. The average consensus probabilities at the closing of the matches. ({{< math >}}$P_{\text{consensus}}${{< /math >}})
+2. The average accuracy in predicting match outcomes (player or player B win). ({{< math >}}$P_{\text{real}}${{< /math >}})
 
 The following figure depicts the linear regression analysis between the two previously computed variables.
 
@@ -388,9 +390,12 @@ The following figure depicts the linear regression analysis between the two prev
 
 The consensus probability functions as a reliable indicator of the underlying outcome probability. In light of these findings, the choice was made to shape a betting strategy founded on the idea that bookmakers already possess highly accurate models for predicting outcomes in tennis matches:
 
+{{< math >}}
 $$
 P_{\text{real}} \approx P_{\text{consensus}} - n \tag{2}
 $$
+{{< /math >}}
+
 
 We pursued this logical approach to establish our betting strategy, opting to make a wager whenever the highest odds provided for a specific outcome satisfied the subsequent inequality:
 
@@ -400,7 +405,7 @@ $$
 $$
 {{< /math >}}
 
-As the $n$ parameter increases, the expected value of each bet grows, but the pool of games available for betting shrinks. This effect stems from the stricter condition, resulting in fewer bookmakers providing odds with significant margins. To identify an appropriate $n$ parameter, we evaluated simulated betting strategies over a range of values, spanning from 0.000 to 0.100. 
+As the {{< math >}}$n${{< /math >}} parameter increases, the expected value of each bet grows, but the pool of games available for betting shrinks. This effect stems from the stricter condition, resulting in fewer bookmakers providing odds with significant margins. To identify an appropriate {{< math >}}$n${{< /math >}} parameter, we evaluated simulated betting strategies over a range of values, spanning from 0.000 to 0.100. 
 
 To accurately determine the optimal value of nnn based on the simulated strategies, various output metrics have been taken into account. These metrics include the total number of games (n_games) to bet, the yield (yield_%), acuracy (accuracy_%), bank standard deviation (bank_std_u), bank coeficient of variation (bank_cv_%) and the final bank amount (final_bank_u).
 
