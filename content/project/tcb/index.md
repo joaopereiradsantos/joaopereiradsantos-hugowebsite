@@ -43,18 +43,8 @@ slides: ''
     - [Web Scraping - Maximizing Data Acquisition with AWS](#web-scraping---maximizing-data-acquisition-with-aws)
     - [Fair Betting and Informed Decisions with Consensus Probability](#fair-betting-and-informed-decisions-with-consensus-probability)
 - [Results](#results)
-  - [Uncontrained Simulations](#uncontrained-simulations)
-    - [Flat Betting](#flat-betting)
-    - [Full-Kelly](#full-kelly)
-    - [Half-Kelly](#half-kelly)
-    - [Quarter-Kelly](#quarter-kelly)
-    - [Eighth-Kelly](#eighth-kelly)
-  - [Constrained Simulations](#constrained-simulations)
-    - [Flat Betting](#flat-betting-1)
-    - [Full-Kelly](#full-kelly-1)
-    - [Half-Kelly](#half-kelly-1)
-    - [Quarter-Kelly](#quarter-kelly-1)
-    - [Eighth-Kelly](#eighth-kelly-1)
+    - [Unconstrained Simulations](#unconstrained-simulations)
+    - [Constrained Simulations](#constrained-simulations)
 - [Discussion](#discussion)
 
 <br/><br/>
@@ -417,10 +407,13 @@ The preferred strategy aims for a positive and reasonable yield percentage, idea
 
 ## Results<a name="results"></a>
 
-the following are the results based on flat betting and fractioned kelly betting. the difference between the unconstrained and constrained simulations is that for the unconstrained simulations we consider all the bookmakers 
+> <font size=5>_The unconstrained bookmaker approach utilizing the half-kelly criterion (...) reached its pinnacle with a bank amount of 24,276 units on the 26th of July._</font>
 
-### Uncontrained Simulations<a name="unconstrained"></a>
-#### Flat Betting<a name="unconstrained_fb"></a>
+The following results are based on both flat betting and fractioned Kelly betting. The distinction between unconstrained and constrained simulations lies in the consideration of bookmakers. Unconstrained simulations encompass all available bookmakers scraped from [oddsportal.com](https://www.oddsportal.com/), while constrained simulations exclusively involve UK-registered bookmakers with tested accounts, including 10Bet, 888sport, bet365, Betfair, Betfred, Betway, bwin, Ladbrokes and William Hill.
+
+Special attention is directed towards the simulation that inspired the title of this article: the unconstrained bookmaker approach utilizing the half-kelly criterion. Notably, this simulation reached its pinnacle with a bank amount of 24,276 units on the 26th of July.
+
+#### Unconstrained Simulations<a name="unconstrained-simulations"></a>
 
 <details><summary>Flat Betting (Assuming a fixed stake = 1u)</summary>
 
@@ -452,7 +445,6 @@ the following are the results based on flat betting and fractioned kelly betting
 
 </details>
 
-#### Full-Kelly<a name="unconstrained_fk"></a>
 
 <details><summary>Full-Kelly (Assuming a starting bank = 1u)</summary>
 
@@ -485,7 +477,6 @@ the following are the results based on flat betting and fractioned kelly betting
 </details>
 
 
-#### Half-Kelly<a name="unconstrained_hk"></a>
 <details><summary>Half-Kelly (Assuming a starting bank = 1u)</summary>
 
 |     n | final_bank_u | n_games | accuracy_% | yield_% | bank_std_u | bank_cv_% |
@@ -516,7 +507,6 @@ the following are the results based on flat betting and fractioned kelly betting
 
 </details>
 
-#### Quarter-Kelly<a name="unconstrained_qk"></a>
 
 <details><summary>Quarter-Kelly (Assuming a starting bank = 1u)</summary>
 
@@ -547,8 +537,6 @@ the following are the results based on flat betting and fractioned kelly betting
 ![q_k_theo](./pictures/q_k_theo.png)
 
 </details>
-
-#### Eighth-Kelly<a name="unconstrained_ek"></a>
 
 
 <details><summary>Eighth-Kelly (Assuming a starting bank = 1u)</summary>
@@ -582,9 +570,7 @@ the following are the results based on flat betting and fractioned kelly betting
 
 </details>
 
-### Constrained Simulations<a name="constrained"></a>
-
-#### Flat Betting<a name="constrained_fb"></a>
+#### Constrained Simulations<a name="constrained-simulations"></a>
 
 <details><summary>Flat Betting (Assuming a fixed stake = 1u)</summary>
 
@@ -617,8 +603,6 @@ the following are the results based on flat betting and fractioned kelly betting
 </details>
 
 
-#### Full-Kelly<a name="constrained_fk"></a>
-
 <details><summary>Full-Kelly (Assuming a starting bank = 1u)</summary>
 
 |     n | final_bank_u | n_games | accuracy_% | yield_% | bank_std_u | bank_cv_% |
@@ -649,7 +633,6 @@ the following are the results based on flat betting and fractioned kelly betting
 
 </details>
 
-#### Half-Kelly<a name="constrained_hk"></a>
 
 <details><summary>Half-Kelly (Assuming a starting bank = 1u)</summary>
 
@@ -681,7 +664,6 @@ the following are the results based on flat betting and fractioned kelly betting
 
 </details>
 
-#### Quarter-Kelly<a name="constrained_qk"></a>
 
 <details><summary>Quarter-Kelly (Assuming a starting bank = 1u)</summary>
 
@@ -712,8 +694,6 @@ the following are the results based on flat betting and fractioned kelly betting
 ![q_k_elig](./pictures/q_k_elig.png)
 
 </details>
-
-#### Eighth-Kelly<a name="constrained_ek"></a>
 
 
 <details><summary>Eighth-Kelly (Assuming a starting bank = 1u)</summary>
