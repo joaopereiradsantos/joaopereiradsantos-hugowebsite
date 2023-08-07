@@ -32,10 +32,8 @@ url_video: ""
 #   Otherwise, set `slides = ""`.
 slides: ''
 ---
-<!-- # Tennis (Consensus) Betting Bot
-## Table of contents  -->
-
-
+# Tennis (Consensus) Betting Bot <!-- omit in toc -->
+## Table of contents <!-- omit in toc -->
 - [Introduction](#introduction)
     - [An Illustrative Case - Halle ATP 500](#an-illustrative-case---halle-atp-500)
     - [Learning (Quickly) from the Past](#learning-quickly-from-the-past)
@@ -43,6 +41,7 @@ slides: ''
 - [Literature Review](#literature-review)
 - [Methodology](#methodology)
     - [Web Scraping - Maximizing Data Acquisition with AWS](#web-scraping---maximizing-data-acquisition-with-aws)
+    - [Fair Betting and Informed Decisions with Consensus Probability](#fair-betting-and-informed-decisions-with-consensus-probability)
 - [Results](#results)
   - [Uncontrained Simulations](#uncontrained-simulations)
     - [Flat Betting](#flat-betting)
@@ -58,6 +57,8 @@ slides: ''
     - [Eighth-Kelly](#eighth-kelly-1)
 - [Discussion](#discussion)
 
+<br/><br/>
+<br/><br/>
 ## Introduction<a name="introduction"></a> 
 
 #### An Illustrative Case - Halle ATP 500<a name="introduction1"></a>
@@ -70,16 +71,24 @@ Reflecting on the prior TBB version driven by machine learning (ML), the 2023 gr
 Inspired by "Beating the Bookies with their own Numbers" by Kaunitz, Shenjun, and Kreiner, the new Tennis (Consensus) Betting Bot (TCBB) embraces a symbiotic approach. It capitalizes on publicly available odds from various bookmakers to find bets with mispriced odds and positive expected value.
 
 Ahead, we delve into the mechanics of the Tennis (Consensus) Betting Bot, tracing its evolution, strategies, and efficacy across the bookmaker landscape. 
+<br/><br/>
+<br/><br/>
 
 ## Literature Review<a name="lr"></a>
+
+> <font size=3>_"Beating the Bookies with Their Own Numbers" has propelled TCBB to challenge conventions, applying a similar approach to tennis._</font>
+
 In the landscape of sports prediction and betting, two pivotal articles have left a substantial impact. ["The Gambler Who Cracked the Horse-Racing Code"](https://www.bloomberg.com/news/features/2018-05-03/the-gambler-who-cracked-the-horse-racing-code) underscores the power of data-driven insights in horse racing betting, while ["Beating the Bookies with Their Own Numbers - and How the Online Sports Betting Market is Rigged"](https://arxiv.org/vc/arxiv/papers/1710/1710.02824v1.pdf) has directly influenced the creation of The Tennis (Consensus) Betting Bot (TCBB), which employs a comparable approach but focuses on tennis.
 
 "Beating the Bookies with Their Own Numbers" introduces a unique methodology that taps into implicit probability information within public odds to uncover mispriced bets. Rigorous simulations spotlight inefficiencies within the football betting market, suggesting the potential for sustained profitability.
 
-While "The Gambler Who Cracked the Horse-Racing Code" underscores analytics' impact in a specific realm, the insights from "Beating the Bookies with Their Own Numbers" have propelled TCBB to challenge conventions, applying a similar approach to tennis. The article's influence serves as both a catalyst and a cautionary tale, prompting a deeper exploration of dynamics within the sports betting arena.
+While "The Gambler Who Cracked the Horse-Racing Code" underscores analytics' impact in a specific realm, the insights from "Beating the Bookies with Their Own Numbers" has propelled TCBB to challenge conventions, applying a similar approach to tennis. The article's influence serves as both a catalyst and a cautionary tale, prompting a deeper exploration of dynamics within the sports betting arena.
+<br/><br/>
+<br/><br/>
 
 ## Methodology<a name="methodology"></a>
 
+> <font size=3>_Bookmakers already possess highly accurate models for predicting outcomes in tennis matches._</font>
 #### Web Scraping - Maximizing Data Acquisition with AWS<a name="webscrapping"></a>
 
 Web scraping has emerged as a pivotal component within the TCBB project, representing a significant upgrade from the prior TBB scraping method. This section delves into the intricacies of web scraping, elucidating its evolution and pivotal role in procuring data for the TCBB project.
@@ -353,6 +362,28 @@ To underscore the efficacy of the web scraping approach, consider the following 
     }
 
 </details>
+
+#### Fair Betting and Informed Decisions with Consensus Probability<a name="webscrapping"></a>
+A fair bet has zero expected value when the bookmaker's odds are the opposite of the actual likelihood of the outcome. Bookmakers make accurate models to estimate outcome probabilities and then offer odds lower than the fair value. This process resembles casino roulette where the house offers odds slightly lower than fair. For instance, in American roulette, betting on red gives an 18/38 chance to double the wager. The fair value is 2.111, but the house only pays 2, indicating they pay less than fair value. This difference acts as a commission for the bookmaker. In roulette, the house expects to earn $0.053 (2/38) for every dollar bet.
+
+An assessment of bookmakers' predictive accuracy was conducted using historical football match data. Closing odds for approximately 30,000 tennis matches held between June and August 2023 were obtained from oddsportal.com, with a focus on "Home-Away Full Time" outcomes (player A or player B win).
+
+To quantify accuracy, a consensus probability approach was employed. The consensus probability (P<sub>consensus</sub>) was determined by calculating the inverse of the mean odds (Ω) favoring either player A or player B.
+
+The data was categorized into 80 bins based on consensus probabilities ranging from 0 to 1, in increments of 0.0125. Within each bin, two key metrics were computed:
+
+1. The average consensus probabilities at the closing of the matches.
+2. The average accuracy in predicting match outcomes (player or player B win).
+
+Refer to the following figure depicting the linear regression analysis between the two previously computed variables.
+
+![linear_reg](./pictures/linear_reg.png)
+
+
+The consensus probability functions as a reliable indicator of the underlying outcome probability. In light of these findings, the choice was made to shape a betting strategy founded on the idea that bookmakers already possess highly accurate models for predicting outcomes in tennis matches.
+
+<br/><br/>
+<br/><br/>
 
 ## Results<a name="results"></a>
 ### Uncontrained Simulations<a name="unconstrained"></a>
