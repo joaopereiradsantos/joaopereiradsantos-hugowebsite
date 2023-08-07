@@ -32,53 +32,331 @@ url_video: ""
 #   Otherwise, set `slides = ""`.
 slides: ''
 ---
-# Tennis (Consensus) Betting Bot
-## Table of contents
-1. [Introduction](#introduction)
-   1. [An Illustrative Case - Halle ATP 500](#introduction1)
-   2. [Learning (Quickly) from the Past](#introduction2)
-   3. [A Fusion of Strategies](#introduction3)
-2. [Literature Review](#lr)
-3. [Methodology](#paragraph1)
-    1. [Sub paragraph](#subparagraph1)
-4. [Results](#results)
-   1. [Unconstrained](#unconstrained)
-      1. [Flat Betting](#unconstrained_fb)
-      2. [Full-Kelly](#paragraph2)
-      3. [Half-Kelly](#paragraph2)
-      4. [Quarter-Kelly](#paragraph2)
-      5. [Eight-Kelly](#paragraph2)
-   2. [Constrained](#constrained)
-      1. [Flat Betting](#paragraph2)
-      2. [Full-Kelly](#paragraph2)
-      3. [Half-Kelly](#paragraph2)
-      4. [Quarter-Kelly](#paragraph2)
-      5. [Eight-Kelly](#paragraph2)
-5. [Discussion](#discussion)
+<!-- # Tennis (Consensus) Betting Bot
+## Table of contents  -->
 
-## Introduction <a name="introduction"></a>
-One year since the debut of the [Tennis Betting Bot (TBB)](https://www.joaopereiradsantos.com/project/tbb/), a new approach has emerged, rooted in bookmakers' consensus, signifying a noteworthy advancement.
-#### An Illustrative Case - Halle ATP 500 <a name="introduction1"></a>
+
+- [Introduction](#introduction)
+    - [An Illustrative Case - Halle ATP 500](#an-illustrative-case---halle-atp-500)
+    - [Learning (Quickly) from the Past](#learning-quickly-from-the-past)
+    - [A Fusion of Strategies](#a-fusion-of-strategies)
+- [Literature Review](#literature-review)
+- [Methodology](#methodology)
+    - [Web Scraping - Maximizing Data Acquisition with AWS](#web-scraping---maximizing-data-acquisition-with-aws)
+- [Results](#results)
+  - [Uncontrained Simulations](#uncontrained-simulations)
+    - [Flat Betting](#flat-betting)
+    - [Full-Kelly](#full-kelly)
+    - [Half-Kelly](#half-kelly)
+    - [Quarter-Kelly](#quarter-kelly)
+    - [Eighth-Kelly](#eighth-kelly)
+  - [Constrained Simulations](#constrained-simulations)
+    - [Flat Betting](#flat-betting-1)
+    - [Full-Kelly](#full-kelly-1)
+    - [Half-Kelly](#half-kelly-1)
+    - [Quarter-Kelly](#quarter-kelly-1)
+    - [Eighth-Kelly](#eighth-kelly-1)
+- [Discussion](#discussion)
+
+## Introduction<a name="introduction"></a> 
+
+#### An Illustrative Case - Halle ATP 500<a name="introduction1"></a>
 In a recent Halle ATP 500 match between Richard Gasquet and Jannik Sinner, bookmakers favored Gasquet with average decimal odds of approximately 5.00, peaking at 5.39 on Pinnacle. Conversely, TBB projected a 41.15% chance of a Gasquet victory, equivalent to decimal odds of 2.43. Despite Gasquet's eventual loss, this marked a notable 116% difference, prompting a pertinent question: Could TBB's projections surpass those of 25 specialized bookmakers on the long-term?
 
-#### Learning (Quickly) from the Past <a name="introduction2"></a>
-Reflecting on the prior TBB version driven by machine learning (ML), the 2023 grass season exposed its impracticality. Swiftly changing inputs hindered an effective ML pipeline. The fast changes in information weren't caught quickly enough, making it hard to create a good feedback loop for adjusting the ML system's settings. This resulted in a devastating -660% return on investment (ROI).
+#### Learning (Quickly) from the Past<a name="introduction2"></a>
+Reflecting on the prior TBB version driven by machine learning (ML), the 2023 grass season exposed its impracticality. Swiftly changing inputs hindered an effective ML pipeline. The fast changes in information weren't caught quickly enough, making it hard to create a good feedback loop for adjusting the ML system's parameters. This resulted in a devastating -660% return on investment (ROI).
 
-#### A Fusion of Strategies <a name="introduction3"></a>
+#### A Fusion of Strategies<a name="introduction3"></a>
 Inspired by "Beating the Bookies with their own Numbers" by Kaunitz, Shenjun, and Kreiner, the new Tennis (Consensus) Betting Bot (TCBB) embraces a symbiotic approach. It capitalizes on publicly available odds from various bookmakers to find bets with mispriced odds and positive expected value.
 
 Ahead, we delve into the mechanics of the Tennis (Consensus) Betting Bot, tracing its evolution, strategies, and efficacy across the bookmaker landscape. 
 
-## Literature Review <a name="lt"></a>
+## Literature Review<a name="lr"></a>
 In the landscape of sports prediction and betting, two pivotal articles have left a substantial impact. ["The Gambler Who Cracked the Horse-Racing Code"](https://www.bloomberg.com/news/features/2018-05-03/the-gambler-who-cracked-the-horse-racing-code) underscores the power of data-driven insights in horse racing betting, while ["Beating the Bookies with Their Own Numbers - and How the Online Sports Betting Market is Rigged"](https://arxiv.org/vc/arxiv/papers/1710/1710.02824v1.pdf) has directly influenced the creation of The Tennis (Consensus) Betting Bot (TCBB), which employs a comparable approach but focuses on tennis.
 
 "Beating the Bookies with Their Own Numbers" introduces a unique methodology that taps into implicit probability information within public odds to uncover mispriced bets. Rigorous simulations spotlight inefficiencies within the football betting market, suggesting the potential for sustained profitability.
 
 While "The Gambler Who Cracked the Horse-Racing Code" underscores analytics' impact in a specific realm, the insights from "Beating the Bookies with Their Own Numbers" have propelled TCBB to challenge conventions, applying a similar approach to tennis. The article's influence serves as both a catalyst and a cautionary tale, prompting a deeper exploration of dynamics within the sports betting arena.
 
-## Results <a name="results"></a>
+## Methodology<a name="methodology"></a>
 
-### Uncontrained Simulations <a name="unconstrained"></a>
+#### Web Scraping - Maximizing Data Acquisition with AWS<a name="webscrapping"></a>
+
+Web scraping has emerged as a pivotal component within the TCBB project, representing a significant upgrade from the prior TBB scraping method. This section delves into the intricacies of web scraping, elucidating its evolution and pivotal role in procuring data for the TCBB project.
+
+Initially, the TCBB project utilized "the-odds-api" to source data. However, the viability of this approach was hampered by its free tier's restrictions, capping data retrieval at 500 requests per month. Furthermore, "the-odds-api" failed to encompass data from ITF tournaments and lower liquidity secondary markets, rendering it insufficient for the TCBB project's expanding requirements.
+
+In order to comprehensively capture data spanning diverse sports and markets, the TCBB project adopted a web scraping strategy focused on oddsportal.com. This platform provides a wealth of data that aligns with the project's scope. The devised web scraping script effectively aggregates bookmakers' odds for a specific game and market, accomplishing this task in approximately 2 seconds. Moreover, opportunities for further optimization lie in the parallelization of scraping processes for each game and market, promising a reduction in overall scraping time.
+
+The deployment and automation facets of web scraping within the TCBB project are seamlessly orchestrated within the AWS Cloud environment. This infrastructure ensures scalability, reliability, and efficient management of scraping operations. A comprehensive depiction of the AWS Architecture is available in Appendix 1 for those seeking in-depth insights into the technical setup.
+
+To underscore the efficacy of the web scraping approach, consider the following example output extracted from the TCBB project's data acquisition process. The provided data pertains to match id "n5Kp6kJP," a fixture within the China ITF M15 Tianjin 4 Men Doubles category. This data is garnered post-game, exemplifying the real-time data procurement capabilities of the TCBB web scraping framework.
+
+<details><summary>n5Kp6kJP</summary>
+
+    {
+                "Match ID": "n5Kp6kJP",
+                "Match Start Timestamp": "2023-07-07 08:30",
+                "Last Update Timestamp": "2023-07-07 18:06:28.339731",
+                "Match": "Arutiunian E./Ostapenkov D. - Li H./Sun Qian",
+                "Player A": "Arutiunian E./Ostapenkov D.",
+                "Player B": "Li H./Sun Qian",
+                "Score": "1:2",
+                "Markets": {
+                    "Home-Away Full Time": {
+                        "Bookmakers": [
+                            {
+                                "Bookmaker": "10Bet",
+                                "Odds": {
+                                    "Player A": "1.57",
+                                    "Player B": "2.25"
+                                }
+                            },
+                            {
+                                "Bookmaker": "10x10bet",
+                                "Odds": {
+                                    "Player A": "1.6",
+                                    "Player B": "2.25"
+                                }
+                            },
+                            {
+                                "Bookmaker": "1xBet",
+                                "Odds": {
+                                    "Player A": "1.61",
+                                    "Player B": "2.21"
+                                }
+                            },
+                            {
+                                "Bookmaker": "888sport",
+                                "Odds": {
+                                    "Player A": "1.53",
+                                    "Player B": "2.2"
+                                }
+                            },
+                            {
+                                "Bookmaker": "Alphabet",
+                                "Odds": {
+                                    "Player A": "1.57",
+                                    "Player B": "2.25"
+                                }
+                            },
+                            {
+                                "Bookmaker": "Betway",
+                                "Odds": {
+                                    "Player A": "1.55",
+                                    "Player B": "2.2"
+                                }
+                            },
+                            {
+                                "Bookmaker": "ComeOn",
+                                "Odds": {
+                                    "Player A": "1.57",
+                                    "Player B": "2.25"
+                                }
+                            },
+                            {
+                                "Bookmaker": "Curebet",
+                                "Odds": {
+                                    "Player A": "1.57",
+                                    "Player B": "2.25"
+                                }
+                            },
+                            {
+                                "Bookmaker": "Dafabet",
+                                "Odds": {
+                                    "Player A": "1.56",
+                                    "Player B": "2.26"
+                                }
+                            },
+                            {
+                                "Bookmaker": "GGBET",
+                                "Odds": {
+                                    "Player A": "1.57",
+                                    "Player B": "2.25"
+                                }
+                            },
+                            {
+                                "Bookmaker": "Lasbet",
+                                "Odds": {
+                                    "Player A": "1.57",
+                                    "Player B": "2.25"
+                                }
+                            },
+                            {
+                                "Bookmaker": "Marathonbet",
+                                "Odds": {
+                                    "Player A": "1.59",
+                                    "Player B": "2.22"
+                                }
+                            },
+                            {
+                                "Bookmaker": "Suprabets",
+                                "Odds": {
+                                    "Player A": "1.57",
+                                    "Player B": "2.25"
+                                }
+                            },
+                            {
+                                "Bookmaker": "VOBET",
+                                "Odds": {
+                                    "Player A": "1.57",
+                                    "Player B": "2.25"
+                                }
+                            },
+                            {
+                                "Bookmaker": "Vulkan Bet",
+                                "Odds": {
+                                    "Player A": "1.57",
+                                    "Player B": "2.25"
+                                }
+                            },
+                            {
+                                "Bookmaker": "William Hill",
+                                "Odds": {
+                                    "Player A": "1.57",
+                                    "Player B": "2.25"
+                                }
+                            }
+                        ]
+                    },
+                    "Home-Away 1st Set": {
+                        "Bookmakers": [
+                            {
+                                "Bookmaker": "10Bet",
+                                "Odds": {
+                                    "Player A": "1.57",
+                                    "Player B": "2.25"
+                                }
+                            },
+                            {
+                                "Bookmaker": "10x10bet",
+                                "Odds": {
+                                    "Player A": "1.62",
+                                    "Player B": "2.2"
+                                }
+                            },
+                            {
+                                "Bookmaker": "1xBet",
+                                "Odds": {
+                                    "Player A": "1.64",
+                                    "Player B": "2.19"
+                                }
+                            },
+                            {
+                                "Bookmaker": "888sport",
+                                "Odds": {
+                                    "Player A": "1.57",
+                                    "Player B": "2.05"
+                                }
+                            },
+                            {
+                                "Bookmaker": "Alphabet",
+                                "Odds": {
+                                    "Player A": "1.6",
+                                    "Player B": "2.2"
+                                }
+                            },
+                            {
+                                "Bookmaker": "ComeOn",
+                                "Odds": {
+                                    "Player A": "1.57",
+                                    "Player B": "2.25"
+                                }
+                            },
+                            {
+                                "Bookmaker": "Curebet",
+                                "Odds": {
+                                    "Player A": "1.6",
+                                    "Player B": "2.2"
+                                }
+                            },
+                            {
+                                "Bookmaker": "Dafabet",
+                                "Odds": {
+                                    "Player A": "1.61",
+                                    "Player B": "2.19"
+                                }
+                            },
+                            {
+                                "Bookmaker": "GGBET",
+                                "Odds": {
+                                    "Player A": "1.65",
+                                    "Player B": "2.25"
+                                }
+                            },
+                            {
+                                "Bookmaker": "Lasbet",
+                                "Odds": {
+                                    "Player A": "1.6",
+                                    "Player B": "2.2"
+                                }
+                            },
+                            {
+                                "Bookmaker": "Suprabets",
+                                "Odds": {
+                                    "Player A": "1.6",
+                                    "Player B": "2.2"
+                                }
+                            },
+                            {
+                                "Bookmaker": "VOBET",
+                                "Odds": {
+                                    "Player A": "1.6",
+                                    "Player B": "2.2"
+                                }
+                            },
+                            {
+                                "Bookmaker": "Vulkan Bet",
+                                "Odds": {
+                                    "Player A": "1.62",
+                                    "Player B": "2.16"
+                                }
+                            }
+                        ]
+                    },
+                    "Home-Away 2nd Set": {
+                        "Bookmakers": [
+                            {
+                                "Bookmaker": "888sport",
+                                "Odds": {
+                                    "Player A": "1.6",
+                                    "Player B": "2.15"
+                                }
+                            },
+                            {
+                                "Bookmaker": "Dafabet",
+                                "Odds": {
+                                    "Player A": "1.61",
+                                    "Player B": "2.19"
+                                }
+                            },
+                            {
+                                "Bookmaker": "GGBET",
+                                "Odds": {
+                                    "Player A": "1.65",
+                                    "Player B": "2.25"
+                                }
+                            },
+                            {
+                                "Bookmaker": "Vulkan Bet",
+                                "Odds": {
+                                    "Player A": "1.61",
+                                    "Player B": "2.17"
+                                }
+                            }
+                        ]
+                    },
+                    "Home-Away 3rd Set": {
+                        "Bookmakers": []
+                    }
+                }
+    }
+
+</details>
+
+## Results<a name="results"></a>
+### Uncontrained Simulations<a name="unconstrained"></a>
+#### Flat Betting<a name="unconstrained_fb"></a>
 
 <details><summary>Flat Betting (Assuming a fixed stake = 1u)</summary>
 
@@ -108,8 +386,9 @@ While "The Gambler Who Cracked the Horse-Racing Code" underscores analytics' imp
 
 ![flat_bet_theo](./pictures/flat_bet_theo.png)
 
-
 </details>
+
+#### Full-Kelly<a name="unconstrained_fk"></a>
 
 <details><summary>Full-Kelly (Assuming a starting bank = 1u)</summary>
 
@@ -141,6 +420,8 @@ While "The Gambler Who Cracked the Horse-Racing Code" underscores analytics' imp
 
 </details>
 
+
+#### Half-Kelly<a name="unconstrained_hk"></a>
 <details><summary>Half-Kelly (Assuming a starting bank = 1u)</summary>
 
 |     n | final_bank_u | n_games | accuracy_% | yield_% | bank_std_u | bank_cv_% |
@@ -171,6 +452,8 @@ While "The Gambler Who Cracked the Horse-Racing Code" underscores analytics' imp
 
 </details>
 
+#### Quarter-Kelly<a name="unconstrained_qk"></a>
+
 <details><summary>Quarter-Kelly (Assuming a starting bank = 1u)</summary>
 
 |     n | final_bank_u | n_games | accuracy_% | yield_% | bank_std_u | bank_cv_% |
@@ -200,6 +483,9 @@ While "The Gambler Who Cracked the Horse-Racing Code" underscores analytics' imp
 ![q_k_theo](./pictures/q_k_theo.png)
 
 </details>
+
+#### Eighth-Kelly<a name="unconstrained_ek"></a>
+
 
 <details><summary>Eighth-Kelly (Assuming a starting bank = 1u)</summary>
 
@@ -232,7 +518,9 @@ While "The Gambler Who Cracked the Horse-Racing Code" underscores analytics' imp
 
 </details>
 
-### Constrained Simulations <a name="constrained"></a>
+### Constrained Simulations<a name="constrained"></a>
+
+#### Flat Betting<a name="constrained_fb"></a>
 
 <details><summary>Flat Betting (Assuming a fixed stake = 1u)</summary>
 
@@ -264,6 +552,9 @@ While "The Gambler Who Cracked the Horse-Racing Code" underscores analytics' imp
 
 </details>
 
+
+#### Full-Kelly<a name="constrained_fk"></a>
+
 <details><summary>Full-Kelly (Assuming a starting bank = 1u)</summary>
 
 |     n | final_bank_u | n_games | accuracy_% | yield_% | bank_std_u | bank_cv_% |
@@ -293,6 +584,8 @@ While "The Gambler Who Cracked the Horse-Racing Code" underscores analytics' imp
 ![f_k_elig](./pictures/f_k_elig.png)
 
 </details>
+
+#### Half-Kelly<a name="constrained_hk"></a>
 
 <details><summary>Half-Kelly (Assuming a starting bank = 1u)</summary>
 
@@ -324,6 +617,8 @@ While "The Gambler Who Cracked the Horse-Racing Code" underscores analytics' imp
 
 </details>
 
+#### Quarter-Kelly<a name="constrained_qk"></a>
+
 <details><summary>Quarter-Kelly (Assuming a starting bank = 1u)</summary>
 
 |     n | final_bank_u | n_games | accuracy_% | yield_% | bank_std_u | bank_cv_% |
@@ -353,6 +648,9 @@ While "The Gambler Who Cracked the Horse-Racing Code" underscores analytics' imp
 ![q_k_elig](./pictures/q_k_elig.png)
 
 </details>
+
+#### Eighth-Kelly<a name="constrained_ek"></a>
+
 
 <details><summary>Eighth-Kelly (Assuming a starting bank = 1u)</summary>
 
@@ -384,5 +682,7 @@ While "The Gambler Who Cracked the Horse-Racing Code" underscores analytics' imp
 
 </details>
 
-## License
-[MIT](https://choosealicense.com/licenses/apache-2.0/)
+## Discussion<a name="discussion"></a>
+
+<!-- ## License
+[MIT](https://choosealicense.com/licenses/apache-2.0/) -->
