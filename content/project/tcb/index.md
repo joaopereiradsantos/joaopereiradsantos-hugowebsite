@@ -77,7 +77,7 @@ Ahead, we delve into the mechanics of the Tennis (Consensus) Betting Bot, tracin
 
 ## Literature Review<a name="lr"></a>
 
-> <font size=3>_"Beating the Bookies with Their Own Numbers" has propelled TCBB to challenge conventions, applying a similar approach to tennis._</font>
+> <font size=5>_"Beating the Bookies with Their Own Numbers" has propelled TCBB to challenge conventions, applying a similar approach to tennis._</font>
 
 In the landscape of sports prediction and betting, two pivotal articles have left a substantial impact. ["The Gambler Who Cracked the Horse-Racing Code"](https://www.bloomberg.com/news/features/2018-05-03/the-gambler-who-cracked-the-horse-racing-code) underscores the power of data-driven insights in horse racing betting, while ["Beating the Bookies with Their Own Numbers - and How the Online Sports Betting Market is Rigged"](https://arxiv.org/vc/arxiv/papers/1710/1710.02824v1.pdf) has directly influenced the creation of The Tennis (Consensus) Betting Bot (TCBB), which employs a comparable approach but focuses on tennis.
 
@@ -89,7 +89,7 @@ While "The Gambler Who Cracked the Horse-Racing Code" underscores analytics' imp
 
 ## Methodology<a name="methodology"></a>
 
-> <font size=3>_Bookmakers already possess highly accurate models for predicting outcomes in tennis matches._</font>
+> <font size=5>_Bookmakers already possess highly accurate models for predicting outcomes in tennis matches._</font>
 #### Web Scraping - Maximizing Data Acquisition with AWS<a name="webscrapping"></a>
 
 Web scraping has emerged as a pivotal component within the TCBB project, representing a significant upgrade from the prior TBB scraping method. This section delves into the intricacies of web scraping, elucidating its evolution and pivotal role in procuring data for the TCBB project.
@@ -412,13 +412,13 @@ To accurately determine the optimal value of nnn based on the simulated strategi
 Among the considered bet sizing strategies are flat betting (placing a fixed amount) and the Kelly bet (Kelly Criterion). From these, fractioned Kelly scenarios have been derived, including full-kelly, half-kelly, quarter-kelly, and eight-kelly. Further information about the Kelly Criterion can be found in Appendix 2.
 
 The preferred strategy aims for a positive and reasonable yield percentage, ideally falling within the range of 5% to 10%. Additionally, it seeks to maintain a reasonably high number of games for placing bets and a low level of bank variability.
-
-
-
 <br/><br/>
 <br/><br/>
 
 ## Results<a name="results"></a>
+
+the following are the results based on flat betting and fractioned kelly betting. the difference between the unconstrained and constrained simulations is that for the unconstrained simulations we consider all the bookmakers 
+
 ### Uncontrained Simulations<a name="unconstrained"></a>
 #### Flat Betting<a name="unconstrained_fb"></a>
 
