@@ -61,6 +61,7 @@ slides: ''
 <br/><br/>
 ## Introduction<a name="introduction"></a> 
 
+
 #### An Illustrative Case - Halle ATP 500<a name="introduction1"></a>
 In a recent Halle ATP 500 match between Richard Gasquet and Jannik Sinner, bookmakers favored Gasquet with average decimal odds of approximately 5.00, peaking at 5.39 on Pinnacle. Conversely, TBB projected a 41.15% chance of a Gasquet victory, equivalent to decimal odds of 2.43. Despite Gasquet's eventual loss, this marked a notable 116% difference, prompting a pertinent question: Could TBB's projections surpass those of 25 specialized bookmakers on the long-term?
 
@@ -93,13 +94,13 @@ While "The Gambler Who Cracked the Horse-Racing Code" underscores analytics' imp
 
 Web scraping has emerged as a pivotal component within the TCBB project, representing a significant upgrade from the prior TBB scraping method. This section delves into the intricacies of web scraping, elucidating its evolution and pivotal role in procuring data for the TCBB project.
 
-Initially, the TCBB project utilized "the-odds-api" to source data. However, the viability of this approach was hampered by its free tier's restrictions, capping data retrieval at 500 requests per month. Furthermore, "the-odds-api" failed to encompass data from ITF tournaments and lower liquidity secondary markets, rendering it insufficient for the TCBB project's expanding requirements.
+Initially, the TCBB project utilized [the-odds-api](https://the-odds-api.com/) to source data. However, the viability of this approach was hampered by its free tier's restrictions, capping data retrieval at 500 requests per month. Furthermore, [the-odds-api](https://the-odds-api.com/)  failed to encompass data from ITF tournaments and lower liquidity secondary markets, rendering it insufficient for the TCBB project's expanding requirements.
 
-In order to comprehensively capture data spanning diverse sports and markets, the TCBB project adopted a web scraping strategy focused on oddsportal.com. This platform provides a wealth of data that aligns with the project's scope. The devised web scraping script effectively aggregates bookmakers' odds for a specific game and market, accomplishing this task in approximately 2 seconds. Moreover, opportunities for further optimization lie in the parallelization of scraping processes for each game and market, promising a reduction in overall scraping time.
+In order to comprehensively capture data spanning diverse sports and markets, the TCBB project adopted a web scraping strategy focused on the website [oddsportal.com](https://www.oddsportal.com/). This platform provides a wealth of data that aligns with the project's scope. The devised web scraping script effectively aggregates bookmakers' odds for a specific game and market, accomplishing this task in approximately 2 seconds. Moreover, opportunities for further optimization lie in the parallelization of scraping processes for each game and market, promising a reduction in overall scraping time.
 
-The deployment and automation facets of web scraping within the TCBB project are seamlessly orchestrated within the AWS Cloud environment. This infrastructure ensures scalability, reliability, and efficient management of scraping operations. A comprehensive depiction of the AWS Architecture is available in Appendix 1 for those seeking in-depth insights into the technical setup.
+The deployment and automation facets of web scraping within the TCBB project are seamlessly orchestrated within the AWS Cloud environment. This infrastructure ensures scalability, reliability, and efficient management of scraping operations. A comprehensive depiction of the AWS Architecture is available in [Appendix 1](#appendix1) for those seeking in-depth insights into the technical setup.
 
-To underscore the efficacy of the web scraping approach, consider the following example output extracted from the TCBB project's data acquisition process. The provided data pertains to match id "n5Kp6kJP," a fixture within the China ITF M15 Tianjin 4 Men Doubles category. This data is garnered post-game, exemplifying the real-time data procurement capabilities of the TCBB web scraping framework.
+To underscore the efficacy of the web scraping approach, consider the following example output extracted from the TCBB project's data acquisition process. The provided data pertains to match id [n5Kp6kJP](https://www.oddsportal.com/tennis/china/itf-m15-tianjin-4-men-doubles/erik-arutiunian-ostapenkov-daniil-li-hanwen-sun-qian-n5Kp6kJP), a fixture within the China ITF M15 Tianjin 4 Men Doubles category. This data was garnered post-game, exemplifying the real-time data procurement capabilities of the TCBB web scraping framework.
 
 <details><summary>n5Kp6kJP</summary>
 
@@ -364,23 +365,48 @@ To underscore the efficacy of the web scraping approach, consider the following 
 </details>
 
 #### Fair Betting and Informed Decisions with Consensus Probability<a name="webscrapping"></a>
-A fair bet has zero expected value when the bookmaker's odds are the opposite of the actual likelihood of the outcome. Bookmakers make accurate models to estimate outcome probabilities and then offer odds lower than the fair value. This process resembles casino roulette where the house offers odds slightly lower than fair. For instance, in American roulette, betting on red gives an 18/38 chance to double the wager. The fair value is 2.111, but the house only pays 2, indicating they pay less than fair value. This difference acts as a commission for the bookmaker. In roulette, the house expects to earn $0.053 (2/38) for every dollar bet.
+A fair bet has zero expected value when the bookmaker's odds are the opposite of the actual likelihood of the outcome. Bookmakers make accurate models to estimate outcome probabilities and then offer odds lower than the fair value. This process resembles casino roulette where the house offers odds slightly lower than fair. For instance, in American roulette, betting on red gives an 18/38 chance to double the wager. The fair value is 2.111, but the house only pays 2, indicating they pay less than fair value. This difference acts as a commission for the bookmaker. In roulette, the house expects to earn 0.053 units (2/38) for every 1 unit bet.
 
-An assessment of bookmakers' predictive accuracy was conducted using historical football match data. Closing odds for approximately 30,000 tennis matches held between June and August 2023 were obtained from oddsportal.com, with a focus on "Home-Away Full Time" outcomes (player A or player B win).
+An assessment of bookmakers' predictive accuracy was conducted using historical tennis match data. Closing odds for approximately 20,000 tennis matches held between June and August 2023 were obtained from [oddsportal.com](https://www.oddsportal.com/), with a focus on "Home-Away Full Time" outcomes (player A or player B win).
 
-To quantify accuracy, a consensus probability approach was employed. The consensus probability (P<sub>consensus</sub>) was determined by calculating the inverse of the mean odds (Ω) favoring either player A or player B.
+To quantify accuracy, a consensus probability approach was employed. The consensus probability ($P_{\text{consensus}}$) was determined by calculating the inverse of the mean odds ($Ω$) favoring either player A or player B:
+
+$$
+P_{\text{consensus}} = \frac{1}{\text{mean}(Ω)} \tag{1}
+$$
+
 
 The data was categorized into 80 bins based on consensus probabilities ranging from 0 to 1, in increments of 0.0125. Within each bin, two key metrics were computed:
 
-1. The average consensus probabilities at the closing of the matches.
-2. The average accuracy in predicting match outcomes (player or player B win).
+1. The average consensus probabilities at the closing of the matches. ($P_{\text{consensus}}$)
+2. The average accuracy in predicting match outcomes (player or player B win). ($P_{\text{real}}$)
 
-Refer to the following figure depicting the linear regression analysis between the two previously computed variables.
+The following figure depicts the linear regression analysis between the two previously computed variables.
 
 ![linear_reg](./pictures/linear_reg.png)
 
 
-The consensus probability functions as a reliable indicator of the underlying outcome probability. In light of these findings, the choice was made to shape a betting strategy founded on the idea that bookmakers already possess highly accurate models for predicting outcomes in tennis matches.
+The consensus probability functions as a reliable indicator of the underlying outcome probability. In light of these findings, the choice was made to shape a betting strategy founded on the idea that bookmakers already possess highly accurate models for predicting outcomes in tennis matches:
+
+$$
+P_{\text{real}} \approx P_{\text{consensus}} - n \tag{2}
+$$
+
+We pursued this logical approach to establish our betting strategy, opting to make a wager whenever the highest odds provided for a specific outcome satisfied the subsequent inequality:
+
+$$
+\max(Ω) > \frac{1}{P_{\text{consensus}} - n} \tag{3}
+$$
+
+As the $n$ parameter increases, the expected value of each bet grows, but the pool of games available for betting shrinks. This effect stems from the stricter condition, resulting in fewer bookmakers providing odds with significant margins. To identify an appropriate $n$ parameter, we evaluated simulated betting strategies over a range of values, spanning from 0.000 to 0.100. 
+
+To accurately determine the optimal value of nnn based on the simulated strategies, various output metrics have been taken into account. These metrics include the total number of games (n_games) to bet, the yield (yield_%), acuracy (accuracy_%), bank standard deviation (bank_std_u), bank coeficient of variation (bank_cv_%) and the final bank amount (final_bank_u).
+
+Among the considered bet sizing strategies are flat betting (placing a fixed amount) and the Kelly bet (Kelly Criterion). From these, fractioned Kelly scenarios have been derived, including full-kelly, half-kelly, quarter-kelly, and eight-kelly. Further information about the Kelly Criterion can be found in Appendix 2.
+
+The preferred strategy aims for a positive and reasonable yield percentage, ideally falling within the range of 5% to 10%. Additionally, it seeks to maintain a reasonably high number of games for placing bets and a low level of bank variability.
+
+
 
 <br/><br/>
 <br/><br/>
