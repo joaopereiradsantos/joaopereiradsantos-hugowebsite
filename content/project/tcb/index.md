@@ -82,7 +82,6 @@ In the domain of sports prediction and betting, two pivotal articles have left a
 
 While "The Gambler Who Cracked the Horse-Racing Code" underscores analytics' impact in a specific realm, the insights from "Beating the Bookies with Their Own Numbers" has propelled TCBB to challenge conventions, applying a similar approach to tennis. The article's influence serves as both a catalyst and a cautionary tale, prompting a deeper exploration of dynamics within the sports betting arena.
 <br/><br/>
-<br/><br/>
 
 ## Methodology<a name="methodology"></a>
 
@@ -729,7 +728,6 @@ Special attention is directed towards the simulation that inspired the title of 
 | 0.100 |         2.04 |      99 |      48.48 |   24.97 |       0.34 |     24.30 |
 
 ![e_k_elig](./pictures/e_k_elig.png)
-
 </details>
 <br/><br/>
 
@@ -741,7 +739,7 @@ Special attention is directed towards the simulation that inspired the title of 
 The advancements of the TCBB, is contrasted with its predecessor TBB, which relies on neural network-based predictions. The concept of utilizing collective intelligence is rooted in observations made by Sir Francis Galton in 1907, where the average guesses of a crowd closely approximated the actual weight of an ox. This idea has been applied in various fields, including ensemble learning in machine learning algorithms. Similarly, in the sports markets, each bookmaker serves as a predictor, and the average odds represent aggregated information. These predictions encompass punters' preferences and opinions, influencing odds based on demand. Given bookmakers' adept predictive models, competing in forecasting game outcomes poses challenges. Prior attempts to outperform the football market with expert strategies yielded inconsistent results (e.g.: ["How Efficient Is the European Football Betting Market? Evidence from Arbitrage and Trading Strategies"](https://www.researchgate.net/publication/46559603_How_Efficient_Is_the_European_Football_Betting_Market_Evidence_from_Arbitrage_and_Trading_Strategies)).
 
 #### Promising Insights from Constrained Simulations<a name="unconstrained-simulations"></a>
-Although conclusive statements about the long-term efficacy of the consensus remain cautious due to the need for an extended analysis horizon, the outcomes of constrained simulations show promise. Specifically, employing flat betting with n ≥ 4% yields an average of about 10 available daily betting opportunities, characterized by a balanced yield percentage and sustainable bank variability. Notably, the more fractioned the Kelly bet becomes, the more consistent the simulation results demonstrate. For instance, the eight-kelly strategy has proven profitable at n > 1.5% with low bank variability, while the full-kelly strategy only realized profits at n > 5% and exhibited bank variability four times higher.
+Although conclusive statements about the long-term efficacy of the consensus remain cautious due to the need for an extended analysis horizon, the outcomes of constrained simulations show promise. Specifically, employing flat betting with {{< math >}}$n${{< /math >}} ≥ 4% yields an average of about 10 available daily betting opportunities, characterized by a balanced yield percentage and sustainable bank variability. Notably, the more fractioned the Kelly bet becomes, the more consistent the simulation results demonstrate. For instance, the eight-kelly strategy has proven profitable at {{< math >}}$n${{< /math >}} > 1.5% with low bank variability, while the full-kelly strategy only realized profits at {{< math >}}$n${{< /math >}} > 5% and exhibited bank variability four times higher.
 
 #### Limits for Successful Bettors<a name="unconstrained-simulations"></a>
 Upon entering the sphere of betting, there is a possibility that bookmakers could swiftly enforce limitations on accounts, resulting in the suspension of betting activities. This potential occurrence brings to light evident discriminatory practices inherent within the online sports betting sector. In this context, individuals showcasing success in their betting ventures might encounter constraints that ultimately hinder their sustained involvement in betting pursuits.
