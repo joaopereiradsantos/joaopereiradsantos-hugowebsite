@@ -745,6 +745,7 @@ Although conclusive statements about the long-term efficacy of the consensus rem
 
 #### Limits for Successful Bettors<a name="unconstrained-simulations"></a>
 Upon entering the sphere of betting, there is a possibility that bookmakers could swiftly enforce limitations on accounts, resulting in the suspension of betting activities. This potential occurrence brings to light evident discriminatory practices inherent within the online sports betting sector. In this context, individuals showcasing success in their betting ventures might encounter constraints that ultimately hinder their sustained involvement in betting pursuits.
+<br/><br/>
 
 ## Appendix<a name="appendix"></a>
 
@@ -752,6 +753,15 @@ Upon entering the sphere of betting, there is a possibility that bookmakers coul
 
 ![aws_diagram](./pictures/aws_diagram.png)
 
+The AWS architecture for web scraping is thoughtfully constructed to ensure a seamless and robust data collection and utilization process. It commences with the utilization of ECS Fargate instances, which leverage the advantages of serverless containerization and the ability to scale horizontally. This approach is chosen over Lambda functions' limited execution time and EC2's configuration overhead.
+
+The collected data finds its secure home in Amazon S3, providing durability and easy accessibility. To maintain data integrity and order, Amazon SQS FIFO is employed for message processing. This ensures that the scraped data is not only gathered but also managed reliably.
+
+The orchestration of these components is facilitated by AWS Step Functions, orchestrating a sequence of Lambda functions. These functions serve to not only persistently store the scraped data into DynamoDB but also to transform it into a tabular format, optimizing it for streamlined analysis.
+
+Furthermore, the architecture includes an additional step triggered after the second S3 bucket. This step involves a specialized Lambda function, designed to detect specific conditions within the data. Should these conditions be met, the Lambda function initiates an SNS email notification, providing a proactive means of addressing critical scenarios.
+
+In addition to these operational aspects, the architecture takes advantage of the structured data stored in S3. By utilizing Amazon Athena, ad-hoc querying and historical exploration become feasible. QuickSight's interactive visualizations and dashboards provide valuable insights for data-driven decision-making. In this way, the architecture is not only geared towards efficient data collection and processing but also towards deriving actionable insights and enabling swift responses.
 
 #### Kelly Criterion<a name="kelly-criterion"></a>
 
@@ -766,9 +776,10 @@ $$
 {{< /math >}}
 
 where:
-{{< math >}}$$f^{\text{*}}$${{< /math >}} is the fraction of the current bankroll to wager.
-
-![kelly_bet](./pictures/kelly_bet.png)
+{{< math >}}$f^{\text{*}}${{< /math >}} is the fraction of the current bankroll to wager.
+{{< math >}}$p${{< /math >}} is the probability of a win.
+{{< math >}}$q${{< /math >}} is the probability of a loss ({{< math >}}$1 - p${{< /math >}}).
+{{< math >}}$b${{< /math >}} is the decimal odd.
 
 ## License<a name="license"></a>
 [MIT](https://choosealicense.com/licenses/apache-2.0/)
