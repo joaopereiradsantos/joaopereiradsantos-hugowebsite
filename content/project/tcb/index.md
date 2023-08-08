@@ -50,13 +50,15 @@ slides: ''
     - [Promising Insights from Constrained Simulations](#promising-insights-from-constrained-simulations)
     - [Limits for Successful Bettors](#limits-for-successful-bettors)
 - [Appendix](#appendix)
+    - [AWS Architecture](#aws-architecture)
+    - [Kelly Criterion](#kelly-criterion)
 - [License](#license)
 
-<br/><br/>
 <br/><br/>
 
 ## Introduction<a name="introduction"></a> 
 
+This article delves into the evolution and impact of the Tennis (Consensus) Betting Bot (TCBB) compared to its precursor, the [Tennis Betting Bot (TBB)](https://www.joaopereiradsantos.com/project/tbb/). Guided by the [wisdom of crowd principle](https://en.wikipedia.org/wiki/Wisdom_of_the_crowd) and influenced by ["Beating the Bookies with Their Own Numbers"](https://arxiv.org/vc/arxiv/papers/1710/1710.02824v1.pdf), TCBB employs publicly available odds to identify potential mispriced bets. The study includes web scraping for data acquisition, fair betting using consensus probability, and analysis of diverse betting strategies. Constrained simulations within TCBB show promise, notably in optimizing bank performance. However, a challenge emerges from the potential of bookmakers imposing account limitations, revealing underlying discriminatory practices in the online sports betting landscape.
 
 #### An Illustrative Case - Halle ATP 500<a name="an-illustrative-case---halle-atp-500"></a>
 In a recent Halle ATP 500 match between Richard Gasquet and Jannik Sinner, bookmakers favored Gasquet with average decimal odds of approximately 5.00, peaking at 5.39 on Pinnacle. Conversely, TBB projected a 41.15% chance of a Gasquet victory, equivalent to decimal odds of 2.43. Despite Gasquet's eventual loss, this marked a notable 116% difference, prompting a pertinent question: Could TBB's projections surpass those of 25 specialized bookmakers on the long-term?
@@ -65,10 +67,9 @@ In a recent Halle ATP 500 match between Richard Gasquet and Jannik Sinner, bookm
 Reflecting on the prior TBB version driven by machine learning (ML), the 2023 grass season exposed its impracticality. Swiftly changing inputs hindered an effective ML pipeline. The fast changes in information weren't caught quickly enough, making it hard to create a good feedback loop for adjusting the ML system's parameters. This resulted in a devastating -660% return on investment (ROI).
 
 #### A Fusion of Strategies<a name="a-fusion-of-strategies"></a>
-Inspired by "Beating the Bookies with their own Numbers" by Kaunitz, Shenjun, and Kreiner, the new Tennis (Consensus) Betting Bot (TCBB) embraces a symbiotic approach. It capitalizes on publicly available odds from various bookmakers to find bets with mispriced odds and positive expected value.
+Inspired by "Beating the Bookies with their own Numbers" by Kaunitz, Shenjun, and Kreiner, the new TCBB embraces a symbiotic approach. It capitalizes on publicly available odds from various bookmakers to find bets with mispriced odds and positive expected value.
 
 Ahead, we delve into the mechanics of the Tennis (Consensus) Betting Bot, tracing its evolution, strategies, and efficacy across the bookmaker landscape. 
-<br/><br/>
 <br/><br/>
 
 ## Literature Review<a name="literature-review"></a>
@@ -94,7 +95,7 @@ Initially, the TCBB project utilized [the-odds-api](https://the-odds-api.com/) t
 
 In order to comprehensively capture data spanning diverse sports and markets, the TCBB project adopted a web scraping strategy focused on the website [oddsportal.com](https://www.oddsportal.com/). This platform provides a wealth of data that aligns with the project's scope. The devised web scraping script effectively aggregates bookmakers' odds for a specific game and market, accomplishing this task in approximately 2 seconds. Moreover, opportunities for further optimization lie in the parallelization of scraping processes for each game and market, promising a reduction in overall scraping time.
 
-The deployment and automation facets of web scraping within the TCBB project are seamlessly orchestrated within the AWS Cloud environment. This infrastructure ensures scalability, reliability, and efficient management of scraping operations. A comprehensive depiction of the AWS Architecture is available in [Appendix 1](#appendix1) for those seeking in-depth insights into the technical setup.
+The deployment and automation facets of web scraping within the TCBB project are seamlessly orchestrated within the AWS Cloud environment. This infrastructure ensures scalability, reliability, and efficient management of scraping operations. A comprehensive depiction of the AWS Architecture is available in [Appendix 1](#aws-architecture) for those seeking in-depth insights into the technical setup.
 
 To underscore the efficacy of the web scraping approach, consider the following example output extracted from the TCBB project's data acquisition process. The provided data pertains to match id [n5Kp6kJP](https://www.oddsportal.com/tennis/china/itf-m15-tianjin-4-men-doubles/erik-arutiunian-ostapenkov-daniil-li-hanwen-sun-qian-n5Kp6kJP), a fixture within the China ITF M15 Tianjin 4 Men Doubles category. This data was garnered post-game, exemplifying the real-time data procurement capabilities of the TCBB web scraping framework.
 
@@ -405,10 +406,9 @@ As the {{< math >}}$n${{< /math >}} parameter increases, the expected value of e
 
 To accurately determine the optimal value of {{< math >}}$n${{< /math >}} based on the simulated strategies, various output metrics have been taken into account. These metrics include the total number of games to bet (n_games), the yield (yield_%), accuracy (accuracy_%), bank standard deviation (bank_std_u), bank coeficient of variation (bank_cv_%) and the final bank amount (final_bank_u).
 
-Among the considered bet sizing strategies are flat betting (placing a fixed amount) and the Kelly bet (Kelly Criterion). From these, fractioned Kelly scenarios have been derived, including full-kelly, half-kelly, quarter-kelly, and eight-kelly. Further information about the Kelly Criterion can be found in Appendix 2.
+Among the considered bet sizing strategies are flat betting (placing a fixed amount) and the Kelly bet (Kelly Criterion). From these, fractioned Kelly scenarios have been derived, including full-kelly, half-kelly, quarter-kelly, and eight-kelly. Further information about the Kelly Criterion can be found in [Appendix 2](kelly-criterion).
 
 The preferred strategy aims for a positive and reasonable yield percentage, ideally falling within the range of 5% to 10%. Additionally, it seeks to maintain a reasonably high number of games for placing bets and a low level of bank variability.
-<br/><br/>
 <br/><br/>
 
 ## Results<a name="results"></a>
@@ -732,7 +732,6 @@ Special attention is directed towards the simulation that inspired the title of 
 
 </details>
 <br/><br/>
-<br/><br/>
 
 ## Discussion<a name="discussion"></a>
 
@@ -748,6 +747,15 @@ Although conclusive statements about the long-term efficacy of the consensus rem
 Upon entering the sphere of betting, there is a possibility that bookmakers could swiftly enforce limitations on accounts, resulting in the suspension of betting activities. This potential occurrence brings to light evident discriminatory practices inherent within the online sports betting sector. In this context, individuals showcasing success in their betting ventures might encounter constraints that ultimately hinder their sustained involvement in betting pursuits.
 
 ## Appendix<a name="appendix"></a>
+
+#### AWS Architecture<a name="aws-architecture"></a>
+
+![aws_diagram](./pictures/aws_diagram.png)
+
+
+#### Kelly Criterion<a name="kelly-criterion"></a>
+
+![kelly_bet](./pictures/kelly_bet.png)
 
 ## License<a name="license"></a>
 [MIT](https://choosealicense.com/licenses/apache-2.0/)
