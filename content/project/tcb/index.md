@@ -58,7 +58,7 @@ slides: ''
 
 ## Introduction<a name="introduction"></a> 
 
-This article delves into the evolution and impact of the Tennis (Consensus) Betting Bot (TCBB) compared to its precursor, the [Tennis Betting Bot (TBB)](https://www.joaopereiradsantos.com/project/tbb/). Guided by the [wisdom of crowd principle](https://en.wikipedia.org/wiki/Wisdom_of_the_crowd) and influenced by ["Beating the Bookies with Their Own Numbers"](https://arxiv.org/vc/arxiv/papers/1710/1710.02824v1.pdf), TCBB employs publicly available odds to identify potential mispriced bets. The study includes web scraping for data acquisition, fair betting using consensus probability, and analysis of diverse betting strategies. Constrained simulations within TCBB show promise, notably in optimizing bank performance. However, a challenge emerges from the potential of bookmakers imposing account limitations, revealing underlying discriminatory practices in the online sports betting landscape.
+This article delves into the evolution and impact of the Tennis (Consensus) Betting Bot (TCBB) compared to its precursor, the [Tennis Betting Bot (TBB)](https://www.joaopereiradsantos.com/project/tbb/). Guided by the [wisdom of crowd principle](https://en.wikipedia.org/wiki/Wisdom_of_the_crowd) and influenced by ["Beating the Bookies with Their Own Numbers"](https://arxiv.org/vc/arxiv/papers/1710/1710.02824v1.pdf), TCBB employs publicly available odds to identify potential mispriced bets. The study includes web scraping for data acquisition, fair betting using consensus probability, and analysis of diverse betting strategies. Constrained simulations within TCBB show promise, notably in optimizing bank performance. However, a challenge emerges from the potential of bookmakers imposing account limitations, revealing underlying discriminatory practices in the online sports betting sphere.
 
 #### An Illustrative Case - Halle ATP 500<a name="an-illustrative-case---halle-atp-500"></a>
 In a recent Halle ATP 500 match between Richard Gasquet and Jannik Sinner, bookmakers favored Gasquet with average decimal odds of approximately 5.00, peaking at 5.39 on Pinnacle. Conversely, TBB projected a 41.15% chance of a Gasquet victory, equivalent to decimal odds of 2.43. Despite Gasquet's eventual loss, this marked a notable 116% difference, prompting a pertinent question: Could TBB's projections surpass those of 25 specialized bookmakers on the long-term?
@@ -76,7 +76,7 @@ Ahead, we delve into the mechanics of the Tennis (Consensus) Betting Bot, tracin
 
 > <font size=5>_"Beating the Bookies with Their Own Numbers" has propelled TCBB to challenge conventions, applying a similar approach to tennis._</font>
 
-In the landscape of sports prediction and betting, two pivotal articles have left a substantial impact. ["The Gambler Who Cracked the Horse-Racing Code"](https://www.bloomberg.com/news/features/2018-05-03/the-gambler-who-cracked-the-horse-racing-code) underscores the power of data-driven insights in horse racing betting, while ["Beating the Bookies with Their Own Numbers - and How the Online Sports Betting Market is Rigged"](https://arxiv.org/vc/arxiv/papers/1710/1710.02824v1.pdf) has directly influenced the creation of The Tennis (Consensus) Betting Bot (TCBB), which employs a comparable approach but focuses on tennis.
+In the domain of sports prediction and betting, two pivotal articles have left a substantial impact. ["The Gambler Who Cracked the Horse-Racing Code"](https://www.bloomberg.com/news/features/2018-05-03/the-gambler-who-cracked-the-horse-racing-code) underscores the power of data-driven insights in horse racing betting, while ["Beating the Bookies with Their Own Numbers - and How the Online Sports Betting Market is Rigged"](https://arxiv.org/vc/arxiv/papers/1710/1710.02824v1.pdf) has directly influenced the creation of The Tennis (Consensus) Betting Bot (TCBB), which employs a comparable approach but focuses on tennis.
 
 "Beating the Bookies with Their Own Numbers" introduces a unique methodology that taps into implicit probability information within public odds to uncover mispriced bets. Rigorous simulations spotlight inefficiencies within the football betting market, suggesting the potential for sustained profitability.
 
@@ -738,7 +738,7 @@ Special attention is directed towards the simulation that inspired the title of 
 > <font size=5>_Bookmakers could swiftly enforce limitations on accounts, resulting in the suspension of betting activities._</font>
 
 #### Betting on the [Wisdom of Crowds](https://en.wikipedia.org/wiki/The_Wisdom_of_Crowds): Galton's Impact on Bookmakers<a name="unconstrained-simulations"></a>
-The advancements of the TCBB, is contrasted with its predecessor TBB, which relies on neural network-based predictions. The concept of utilizing collective intelligence is rooted in observations made by Sir Francis Galton in 1907, where the average guesses of a crowd closely approximated the actual weight of an ox. This idea has been applied in various fields, including ensemble learning in machine learning algorithms. Similarly, in the sports markets, each bookmaker serves as a predictor, and the average odds represent aggregated information. These predictions encompass punters' preferences and opinions, influencing odds based on demand. Given bookmakers' adept predictive models, competing in forecasting game outcomes poses challenges. Prior attempts to outperform the football market with expert strategies yielded inconsistent results (e.g. ["How Efficient Is the European Football Betting Market? Evidence from Arbitrage and Trading Strategies"](https://www.researchgate.net/publication/46559603_How_Efficient_Is_the_European_Football_Betting_Market_Evidence_from_Arbitrage_and_Trading_Strategies)).
+The advancements of the TCBB, is contrasted with its predecessor TBB, which relies on neural network-based predictions. The concept of utilizing collective intelligence is rooted in observations made by Sir Francis Galton in 1907, where the average guesses of a crowd closely approximated the actual weight of an ox. This idea has been applied in various fields, including ensemble learning in machine learning algorithms. Similarly, in the sports markets, each bookmaker serves as a predictor, and the average odds represent aggregated information. These predictions encompass punters' preferences and opinions, influencing odds based on demand. Given bookmakers' adept predictive models, competing in forecasting game outcomes poses challenges. Prior attempts to outperform the football market with expert strategies yielded inconsistent results (e.g.: ["How Efficient Is the European Football Betting Market? Evidence from Arbitrage and Trading Strategies"](https://www.researchgate.net/publication/46559603_How_Efficient_Is_the_European_Football_Betting_Market_Evidence_from_Arbitrage_and_Trading_Strategies)).
 
 #### Promising Insights from Constrained Simulations<a name="unconstrained-simulations"></a>
 Although conclusive statements about the long-term efficacy of the consensus remain cautious due to the need for an extended analysis horizon, the outcomes of constrained simulations show promise. Specifically, employing flat betting with n ≥ 4% yields an average of about 10 available daily betting opportunities, characterized by a balanced yield percentage and sustainable bank variability. Notably, the more fractioned the Kelly bet becomes, the more consistent the simulation results demonstrate. For instance, the eight-kelly strategy has proven profitable at n > 1.5% with low bank variability, while the full-kelly strategy only realized profits at n > 5% and exhibited bank variability four times higher.
@@ -754,6 +754,19 @@ Upon entering the sphere of betting, there is a possibility that bookmakers coul
 
 
 #### Kelly Criterion<a name="kelly-criterion"></a>
+
+The Kelly criterion is a formula used to determine the optimal size of a bet in probability theory. It maximizes the expected value of the logarithm of wealth, equivalent to maximizing the expected geometric growth rate, under the assumption that expected returns are known and the bettor values their wealth logarithmically. This criterion has practical applications in gambling and investment management, with its concepts embraced by successful investors like Warren Buffett. It calculates the ideal portion of a bankroll to wager, based on the probability of winning and losing and the potential payoff. It provides a method for rational decision-making in betting scenarios, aiming to maximize long-term growth while accounting for risk.
+
+Where losing the bet involves losing the entire wager, the Kelly bet is: 
+
+{{< math >}}
+$$
+f^{\text{*}} = p - \frac{q}{b} = p - \frac{1 - p}{b} \tag{4}
+$$
+{{< /math >}}
+
+where:
+{{< math >}}$$f^{\text{*}}$${{< /math >}} is the fraction of the current bankroll to wager.
 
 ![kelly_bet](./pictures/kelly_bet.png)
 
