@@ -46,26 +46,32 @@ slides: ''
     - [Unconstrained Simulations](#unconstrained-simulations)
     - [Constrained Simulations](#constrained-simulations)
 - [Discussion](#discussion)
+    - [Betting on the Wisdom of Crowds: Galton's Impact on Bookmakers](#betting-on-the-wisdom-of-crowds-galtons-impact-on-bookmakers)
+    - [Promising Insights from Constrained Simulations](#promising-insights-from-constrained-simulations)
+    - [Limits for Successful Bettors](#limits-for-successful-bettors)
+- [Appendix](#appendix)
+- [License](#license)
 
 <br/><br/>
 <br/><br/>
+
 ## Introduction<a name="introduction"></a> 
 
 
-#### An Illustrative Case - Halle ATP 500<a name="introduction1"></a>
+#### An Illustrative Case - Halle ATP 500<a name="an-illustrative-case---halle-atp-500"></a>
 In a recent Halle ATP 500 match between Richard Gasquet and Jannik Sinner, bookmakers favored Gasquet with average decimal odds of approximately 5.00, peaking at 5.39 on Pinnacle. Conversely, TBB projected a 41.15% chance of a Gasquet victory, equivalent to decimal odds of 2.43. Despite Gasquet's eventual loss, this marked a notable 116% difference, prompting a pertinent question: Could TBB's projections surpass those of 25 specialized bookmakers on the long-term?
 
-#### Learning (Quickly) from the Past<a name="introduction2"></a>
+#### Learning (Quickly) from the Past<a name="learning-quickly-from-the-past"></a>
 Reflecting on the prior TBB version driven by machine learning (ML), the 2023 grass season exposed its impracticality. Swiftly changing inputs hindered an effective ML pipeline. The fast changes in information weren't caught quickly enough, making it hard to create a good feedback loop for adjusting the ML system's parameters. This resulted in a devastating -660% return on investment (ROI).
 
-#### A Fusion of Strategies<a name="introduction3"></a>
+#### A Fusion of Strategies<a name="a-fusion-of-strategies"></a>
 Inspired by "Beating the Bookies with their own Numbers" by Kaunitz, Shenjun, and Kreiner, the new Tennis (Consensus) Betting Bot (TCBB) embraces a symbiotic approach. It capitalizes on publicly available odds from various bookmakers to find bets with mispriced odds and positive expected value.
 
 Ahead, we delve into the mechanics of the Tennis (Consensus) Betting Bot, tracing its evolution, strategies, and efficacy across the bookmaker landscape. 
 <br/><br/>
 <br/><br/>
 
-## Literature Review<a name="lr"></a>
+## Literature Review<a name="literature-review"></a>
 
 > <font size=5>_"Beating the Bookies with Their Own Numbers" has propelled TCBB to challenge conventions, applying a similar approach to tennis._</font>
 
@@ -397,7 +403,7 @@ $$
 
 As the {{< math >}}$n${{< /math >}} parameter increases, the expected value of each bet grows, but the pool of games available for betting shrinks. This effect stems from the stricter condition, resulting in fewer bookmakers providing odds with significant margins. To identify an appropriate {{< math >}}$n${{< /math >}} parameter, we evaluated simulated betting strategies over a range of values, spanning from 0.000 to 0.100. 
 
-To accurately determine the optimal value of nnn based on the simulated strategies, various output metrics have been taken into account. These metrics include the total number of games (n_games) to bet, the yield (yield_%), acuracy (accuracy_%), bank standard deviation (bank_std_u), bank coeficient of variation (bank_cv_%) and the final bank amount (final_bank_u).
+To accurately determine the optimal value of {{< math >}}$n${{< /math >}} based on the simulated strategies, various output metrics have been taken into account. These metrics include the total number of games to bet (n_games), the yield (yield_%), accuracy (accuracy_%), bank standard deviation (bank_std_u), bank coeficient of variation (bank_cv_%) and the final bank amount (final_bank_u).
 
 Among the considered bet sizing strategies are flat betting (placing a fixed amount) and the Kelly bet (Kelly Criterion). From these, fractioned Kelly scenarios have been derived, including full-kelly, half-kelly, quarter-kelly, and eight-kelly. Further information about the Kelly Criterion can be found in Appendix 2.
 
@@ -725,8 +731,23 @@ Special attention is directed towards the simulation that inspired the title of 
 ![e_k_elig](./pictures/e_k_elig.png)
 
 </details>
+<br/><br/>
+<br/><br/>
 
 ## Discussion<a name="discussion"></a>
 
-<!-- ## License
-[MIT](https://choosealicense.com/licenses/apache-2.0/) -->
+> <font size=5>_Bookmakers could swiftly enforce limitations on accounts, resulting in the suspension of betting activities._</font>
+
+#### Betting on the [Wisdom of Crowds](https://en.wikipedia.org/wiki/The_Wisdom_of_Crowds): Galton's Impact on Bookmakers<a name="unconstrained-simulations"></a>
+The advancements of the TCBB, is contrasted with its predecessor TBB, which relies on neural network-based predictions. The concept of utilizing collective intelligence is rooted in observations made by Sir Francis Galton in 1907, where the average guesses of a crowd closely approximated the actual weight of an ox. This idea has been applied in various fields, including ensemble learning in machine learning algorithms. Similarly, in the sports markets, each bookmaker serves as a predictor, and the average odds represent aggregated information. These predictions encompass punters' preferences and opinions, influencing odds based on demand. Given bookmakers' adept predictive models, competing in forecasting game outcomes poses challenges. Prior attempts to outperform the football market with expert strategies yielded inconsistent results (e.g. ["How Efficient Is the European Football Betting Market? Evidence from Arbitrage and Trading Strategies"](https://www.researchgate.net/publication/46559603_How_Efficient_Is_the_European_Football_Betting_Market_Evidence_from_Arbitrage_and_Trading_Strategies)).
+
+#### Promising Insights from Constrained Simulations<a name="unconstrained-simulations"></a>
+Although conclusive statements about the long-term efficacy of the consensus remain cautious due to the need for an extended analysis horizon, the outcomes of constrained simulations show promise. Specifically, employing flat betting with n ≥ 4% yields an average of about 10 available daily betting opportunities, characterized by a balanced yield percentage and sustainable bank variability. Notably, the more fractioned the Kelly bet becomes, the more consistent the simulation results demonstrate. For instance, the eight-kelly strategy has proven profitable at n > 1.5% with low bank variability, while the full-kelly strategy only realized profits at n > 5% and exhibited bank variability four times higher.
+
+#### Limits for Successful Bettors<a name="unconstrained-simulations"></a>
+Upon entering the sphere of betting, there is a possibility that bookmakers could swiftly enforce limitations on accounts, resulting in the suspension of betting activities. This potential occurrence brings to light evident discriminatory practices inherent within the online sports betting sector. In this context, individuals showcasing success in their betting ventures might encounter constraints that ultimately hinder their sustained involvement in betting pursuits.
+
+## Appendix<a name="appendix"></a>
+
+## License<a name="license"></a>
+[MIT](https://choosealicense.com/licenses/apache-2.0/)
