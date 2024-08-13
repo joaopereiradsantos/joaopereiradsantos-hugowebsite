@@ -29,7 +29,22 @@ experience:
     location: Barcelona, Spain
     date_start: '2023-04-01'
     date_end: 
-    description:
+    description: |2-
+      <p><b>EU Supply Chain Analytics FC Launch</b><br> 
+      The <a href="https://w.amazon.com/bin/view/EU_SC_FC_Launch_Transfer_Analytics/">EU SC FC Launch Team</a> manages the supply chain ramp up of new Amazon-owned FCs from zero to one. The team strives to support the overall S-Team goal of 10% YoY productivity improvement of new FCs by providing required IB and OB daily/weekly volumes to maximize new FC's operation effciency.</p>
+      <br>
+      <ul>
+
+        <li>
+          <b>EU SC Network Planning MBR Tech Lead</b>
+          <p>...
+          <details><summary>Details</summary>
+          <a href="https://app.asana.com/0/portfolio/1201494474767093/list">Internal Documentation</a>
+          <ul>
+            <li>...</li>
+          </ul> 
+          </details></p>
+        </li>
 
 
   - title: Business Intelligence Engineer | Transportation & Supply Chain (EU SC FC Launch & Transfer Analytics)
@@ -40,8 +55,8 @@ experience:
     date_start: '2021-08-01'
     date_end: '2023-04-01'
     description: |2-
-      <p><b>EU Supply Chain Analytics BI Admin</b><br> 
-      The <a href="https://w.amazon.com/bin/view/EU_SC_ANALYTICS_BI_ADMIN/">EU SC Analytics BI Admin Team</a> mission is to empower the users (+300 users) to produce and obtain data in the fastest, easiest and cheapest way, while maintaining and continuously improve the BI infrastructure.<br>
+      <p><b>EU Supply Chain Analytics Data Engineering Admin</b><br> 
+      The <a href="https://w.amazon.com/bin/view/EU_SC_ANALYTICS_BI_ADMIN/">EU SC Analytics Data Engineering Admin Team</a> mission is to empower the users (+300 users) to produce and obtain data in the fastest, easiest and cheapest way, while maintaining and continuously improve the data infrastructure.<br>
       Ownership and management of 2 AWS accounts, including 2 Redshift clusters.</p>
       <br>
       <ul>
