@@ -22,13 +22,23 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
+  - title: Business Intelligence Engineer II | Transportation & Supply Chain (EU SC FC Launch & Transfer Analytics)
+    company: Amazon
+    company_url: 'https://amazon.com/'
+    company_logo: amazon
+    location: Barcelona, Spain
+    date_start: '2023-04-01'
+    date_end: 
+    description:
+
+
   - title: Business Intelligence Engineer | Transportation & Supply Chain (EU SC FC Launch & Transfer Analytics)
     company: Amazon
     company_url: 'https://amazon.com/'
     company_logo: amazon
-    location: London, United Kingdom – Barcelona, Spain
+    location: London, United Kingdom
     date_start: '2021-08-01'
-    date_end: ''
+    date_end: '2023-04-01'
     description: |2-
       <p><b>EU Supply Chain Analytics BI Admin</b><br> 
       The <a href="https://w.amazon.com/bin/view/EU_SC_ANALYTICS_BI_ADMIN/">EU SC Analytics BI Admin Team</a> mission is to empower the users (+300 users) to produce and obtain data in the fastest, easiest and cheapest way, while maintaining and continuously improve the BI infrastructure.<br>
