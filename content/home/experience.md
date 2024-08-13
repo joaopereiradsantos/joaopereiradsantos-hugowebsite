@@ -26,7 +26,7 @@ experience:
     company: Amazon
     company_url: 'https://amazon.com/'
     company_logo: amazon
-    location: London, United Kingdom
+    location: London, United Kingdom – Barcelona, Spain
     date_start: '2021-08-01'
     date_end: ''
     description: |2-
