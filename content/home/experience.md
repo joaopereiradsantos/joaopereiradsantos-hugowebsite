@@ -38,7 +38,6 @@ experience:
         <li>
           <b>EU SC Network Planning MBR Tech Lead</b>
           <p>Led the EU SC Network Planning Tech MBR, coordinating 5 subteams across 25 tech projects. Collaborated closely with 5 tech members and 5 business stakeholders, orchestrating the successful delivery of solutions
-          <details><summary>Details</summary>
         </li>
 
 
