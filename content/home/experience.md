@@ -49,6 +49,21 @@ experience:
         </details>
       </li>
 
+      <li>
+        <b>Rolled out EXTREME: Excel to Redshift Migration Engine to EU Central Flow</b>
+        <p>Successfully implemented EXTREME for over 20,000 EU Central Flow users, streamlining the migration of Excel data to Redshift.</p>
+          <details><summary>Details</summary>
+          <a href="https://w.amazon.com/bin/view/EXTREME/">Internal Documentation</a>
+          <ul>
+            <li>Utilizes an IAM role instead of a generic user for querying Redshift, enhancing security and access control.</li>
+            <li>Averages around 10 daily service calls, demonstrating high usage and integration within existing workflows.</li>
+            <li>Over 100 local tables created, significantly improving data accessibility and reporting capabilities for users.</li>
+            <li>Based on user feedback, EXTREME has reduced the time required to manually update a local table via traditional SQL commands by more than half.</li>
+          </ul>
+        </details>
+      </li>
+
+
   - title: Business Intelligence Engineer | Transportation & Supply Chain (EU SC FC Launch & Transfer Analytics)
     company: Amazon
     company_url: 'https://amazon.com/'
