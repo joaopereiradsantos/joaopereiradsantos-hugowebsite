@@ -39,7 +39,7 @@ experience:
         <b>EU SC Network Planning MBR Tech Lead</b>
         <p>Led the EU SC Network Planning Tech MBR, coordinating 5 subteams across 25 tech projects. Collaborated closely with 5 tech members and 5 business stakeholders, orchestrating the successful delivery of solutions.</p>
           <details><summary>Details</summary>
-          <a href="hhttps://drive.corp.amazon.com/personal/mznjoao/Archive/EU%20SC%20Network%20Planning%20MBR%20Tech">Internal Documentation</a>
+          <a href="https://drive.corp.amazon.com/personal/mznjoao/Archive/EU%20SC%20Network%20Planning%20MBR%20Tech">Internal Documentation</a>
           <ul>
             <li>The Network Planning Tech Projects MBR serves as a bridge between technical advancements and business strategy, providing an accessible overview for all stakeholders. Weekly calls help align tech priorities across subteams and BIE resources.</li>
             <li>Project management is facilitated using <a href="https://app.asana.com/0/portfolio/1206552745859427/list">Asana</a>, ensuring tasks are well-structured, tracked, and completed on time. Subteams are assigned clear priorities and deadlines, and project progress is monitored to ensure alignment with strategic goals.</li>
