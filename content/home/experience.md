@@ -204,6 +204,10 @@ experience:
             <li>It aims to not only support Launch PM with easy data access during pre/post launch period, but also facilitate post-mortem analysis such as comparing ramp up performance of FCs launched in different years;</li>
             <li>For each FC and Week combination there’re a different number of possible Flows and Subflows. For instance, as the main flow: Crossdock Transfer In, Inventory, Manual Transfer In, New Vendor Freight, New Workable Demand, Not Yet Received (FC Receive Correction), Orders Cancelled/ Confirmed/ Received/ Submitted, Pod Transfer In, Proactive Transfer In, Reactive Transfer In all have a respective subflow related to the total number of units drilled down by: Total Quantity, Quantity FBA and Quantity AMZN (Total Quantity = FBA + AMZN);</li>
             <li>The dashboard has 7 main metric tabs (📈 TIB, NTSI, NVF, POD, INV, NWD and ORD), a summary report tab (📝 RPT), an FC comparison tab (🆚  VS) and finally a tab dedicated to our team contact information and extract/ load job details (👨‍💻 INFO).</li>
+            <div style="display: flex;">
+              <img src="https://joaopereiradsantos.com/uploads/qs_fcperformance_tib.png" alt="EU SC FC Performance QS TIB" style="width: 49%; margin-right: 1%;">
+              <img src="https://joaopereiradsantos.com/uploads/qs_fcperformance_rpt.png" alt="EU SC FC Performance QS RPT" style="width: 49%;">
+            </div>
           </ul> 
           </details></p>
         </li>
@@ -283,7 +287,7 @@ experience:
           <b>Sort Share and Impact on Item Selection</b>
           <p>Deep dive analysis regarding the impact on the unique item selection based on the IXD sort share deviation to ideals. Financial outcome based on the country level Cross-Border Fulfillment (CBF) cost on different ITS algorithm decisions.
           <details><summary>Details</summary>
-          <a href="https://drive.corp.amazon.com/documents/mznjoao@/Archive/Docs/IXD%20Sort%20Share%20and%20Impact%20on%20Placement.pdf">Internal Dashboard</a>
+          <a href="https://drive.corp.amazon.com/documents/mznjoao@/Archive/Docs/IXD%20Sort%20Share%20and%20Impact%20on%20Placement.pdf">Internal Documentation</a>
           <ul>
             <li>Improved sort share bridge to item selection and weekly WBR review in sort share deviation to ideals, right sortation and CBF due to wrong sortation;</li>
             <li>SQL Extract Jobs and Statistical Analysis with Excel: Pearson Correlation Coefficient, P-Value and Linear Regression.</li>
