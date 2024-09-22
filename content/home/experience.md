@@ -63,6 +63,23 @@ experience:
         </details>
       </li>
 
+      <li>
+        <b>Developed EU/NA Pod Transfer Dashboard</b>
+        <p>Launched two comprehensive dashboards to track pod transfers across EU and NA warehouses, leveraging 6 QuickSight datasets per region while denormalizing data from Amazon's central S3 datalake (Andes).</p>
+          <details><summary>Details</summary>
+          <a href="https://w.amazon.com/bin/view/EU_SC_FC_Launch_Transfer_Analytics/Tech/EU_SC_Pod_Transfer_Dashboard/">Internal EU Dashboard</a> | 
+          <a href="https://w.amazon.com/bin/view/EU_SC_FC_Launch_Transfer_Analytics/Tech/EU_SC_Pod_Transfer_Dashboard_NA/">Internal NA Dashboard</a>
+          <ul>
+            <li>Data pipelines denormalized using Spark SQL, forming Redshift tables to ensure seamless data availability for key metrics and insights.</li>
+            <li>Dashboard metrics cover pod transfer volumes, item quantities, warehouse fullness, and relative fullness, viewed over 600 times by 40 distinct users.</li>
+            <li>Includes 8 tabs (📈 IPT, Pods, Volume, Cube, Trailers, Bin Fullness, Inventory, and Report), with filters for warehouse selection and date ranges and finally a tab dedicated to our team contact information and extract/ load job details (👨‍💻 INFO).</li>
+            <div style="display: flex;">
+              <img src="https://joaopereiradsantos.com/uploads/qs_napodtransfer_ipt.png" alt="EU SC FC Pos Transfer NA QS TIB" style="width: 49%; margin-right: 1%;">
+            </div>
+          </ul>
+        </details>
+      </li>
+
 
   - title: Business Intelligence Engineer | Transportation & Supply Chain (EU SC FC Launch & Transfer Analytics)
     company: Amazon
