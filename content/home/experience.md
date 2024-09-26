@@ -84,7 +84,7 @@ experience:
         <b>QuickSight Dataset Optimization and Redshift Usage Reduction</b>
         <p>Implemented a data-driven approach to identify and deschedule QuickSight datasets feeding unused or underutilized dashboards, improving Redshift query performance.</p>
           <details><summary>Details</summary>
-          <a href="https://t.corp.amazon.com/V1294476600">Internal Documentation</a> | 
+          <a href="https://t.corp.amazon.com/V1294476600">Internal Documentation</a> 
         <ul>
           <li>Developed a process using CloudTrail logs and Redshift query metrics to track dataset usage, linking datasets to active dashboards and analyses.</li>
           <li>Reduced operational overhead by targeting datasets feeding dashboards with zero or minimal user views, freeing up Redshift resources and improving overall query performance.</li>
