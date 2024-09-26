@@ -64,7 +64,7 @@ experience:
       </li>
 
       <li>
-        <b>Developed EU/NA Pod Transfer Dashboard</b>
+        <b>Developed EU/NA Pod Transfer QuickSight Dashboard</b>
         <p>Launched two comprehensive dashboards to track pod transfers across EU and NA warehouses, leveraging 6 QuickSight datasets per region while denormalizing data from Amazon's central S3 datalake (Andes).</p>
           <details><summary>Details</summary>
           <a href="https://w.amazon.com/bin/view/EU_SC_FC_Launch_Transfer_Analytics/Tech/EU_SC_Pod_Transfer_Dashboard/">Internal EU Dashboard</a> | 
@@ -79,6 +79,21 @@ experience:
           </ul>
         </details>
       </li>
+
+      <li>
+        <b>QuickSight Dataset Optimization and Redshift Usage Reduction</b>
+        <p>Implemented a data-driven approach to identify and deschedule QuickSight datasets feeding unused or underutilized dashboards, improving Redshift query performance.</p>
+          <details><summary>Details</summary>
+          <a href="https://t.corp.amazon.com/V1294476600">Internal Documentation</a> | 
+        <ul>
+          <li>Developed a process using CloudTrail logs and Redshift query metrics to track dataset usage, linking datasets to active dashboards and analyses.</li>
+          <li>Reduced operational overhead by targeting datasets feeding dashboards with zero or minimal user views, freeing up Redshift resources and improving overall query performance.</li>
+          <li>Partnered with Python integration to automate analysis and reconciliation of datasets with Redshift queries, views, and deleted dashboard events.</li>
+          <li>Identified 50+ datasets that ran unnecessary queries, consuming 6+ hours of Redshift processing time weekly.</li>
+        </ul>
+      </details>
+    </li>
+
 
 
   - title: Business Intelligence Engineer | Transportation & Supply Chain (EU SC FC Launch & Transfer Analytics)
@@ -213,7 +228,7 @@ experience:
         <br>
         
         <li>
-          <b>EU SC FC Launch Performance Dashboard</b>
+          <b>EU SC FC Launch Performance QuickSight Dashboard</b>
           <p>The EU SC FC Launch Performance Dashboard is a “One Stop Shop” metrics compilation to provide a user friendly interface and visualizations of new FC’s ramp up actuals vs. wk-1/locked S&OP plans.
           <details><summary>Details</summary>
           <a href="https://eu-west-1.quicksight.aws.amazon.com/sn/accounts/764946308314/dashboards/32833b51-28e3-4576-92ac-a756ce108c6c">Internal Dashboard</a>
