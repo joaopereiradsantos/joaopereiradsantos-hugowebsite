@@ -85,16 +85,14 @@ experience:
         <p>Implemented a data-driven approach to identify and deschedule QuickSight datasets feeding unused or underutilized dashboards, improving Redshift query performance.</p>
           <details><summary>Details</summary>
           <a href="https://t.corp.amazon.com/V1294476600">Internal Documentation</a> 
-        <ul>
-          <li>Developed a process using CloudTrail logs and Redshift query metrics to track dataset usage, linking datasets to active dashboards and analyses.</li>
-          <li>Reduced operational overhead by targeting datasets feeding dashboards with zero or minimal user views, freeing up Redshift resources and improving overall query performance.</li>
-          <li>Partnered with Python integration to automate analysis and reconciliation of datasets with Redshift queries, views, and deleted dashboard events.</li>
-          <li>Identified 50+ datasets that ran unnecessary queries, consuming 6+ hours of Redshift processing time weekly.</li>
-        </ul>
-      </details>
-    </li>
-
-
+          <ul>
+            <li>Developed a process using CloudTrail logs and Redshift query metrics to track dataset usage, linking datasets to active dashboards and analyses.</li>
+            <li>Reduced operational overhead by targeting datasets feeding dashboards with zero or minimal user views, freeing up Redshift resources and improving overall query performance.</li>
+            <li>Partnered with Python integration to automate analysis and reconciliation of datasets with Redshift queries, views, and deleted dashboard events.</li>
+            <li>Identified 50+ datasets that ran unnecessary queries, consuming 6+ hours of Redshift processing time weekly.</li>
+          </ul>
+        </details>
+      </li>
 
   - title: Business Intelligence Engineer | Transportation & Supply Chain (EU SC FC Launch & Transfer Analytics)
     company: Amazon
