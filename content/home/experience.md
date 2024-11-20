@@ -22,13 +22,22 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
+  - title: Senior Data Engineer | Autonomous Procurement
+    company: Transporeon
+    company_url: 'https://transporeon.com/'
+    company_logo: transporeon
+    location: Barcelona, Spain (Full Remote)
+    date_start: '2024-12-01'
+    date_end: 
+    description: |2-
+
   - title: Business Intelligence Engineer II | Transportation & Supply Chain (EU SC FC Launch & Transfer Analytics)
     company: Amazon
     company_url: 'https://amazon.com/'
     company_logo: amazon
-    location: Barcelona, Spain
+    location: Barcelona, Spain (Hybrid)
     date_start: '2023-04-01'
-    date_end: 
+    date_end: '2024-11-30'
     description: |2-
       <p><b>EU Supply Chain Analytics FC Launch</b><br> 
       The <a href="https://w.amazon.com/bin/view/EU_SC_FC_Launch_Transfer_Analytics/">EU SC FC Launch Team</a> manages the supply chain ramp up of new Amazon-owned FCs from zero to one. The team strives to support the overall S-Team goal of 10% YoY productivity improvement of new FCs by providing required IB and OB daily/weekly volumes to maximize new FC's operation effciency.</p>
@@ -98,7 +107,7 @@ experience:
     company: Amazon
     company_url: 'https://amazon.com/'
     company_logo: amazon
-    location: London, United Kingdom
+    location: London, United Kingdom (Hybrid)
     date_start: '2021-08-01'
     date_end: '2023-04-01'
     description: |2-
@@ -246,7 +255,7 @@ experience:
     company: Amazon
     company_url: 'https://amazon.com/'
     company_logo: amazon
-    location: Luxembourg, Luxembourg
+    location: Luxembourg, Luxembourg (Hybrid)
     date_start: '2021-02-08'
     date_end: '2021-07-31'
     description: |2-
@@ -329,7 +338,7 @@ experience:
     company: Amkor Technology
     company_url: "https://amkor.com/"
     company_logo: amkor_tech
-    location: Mindelo, Portugal
+    location: Mindelo, Portugal (On-Site)
     date_start: "2020-09-01"
     date_end: "2021-01-11"
     description: |2-
@@ -350,7 +359,7 @@ experience:
     company: Amkor Technology
     company_url: "https://amkor.com/"
     company_logo: amkor_tech
-    location: Mindelo, Portugal
+    location: Mindelo, Portugal (Hybrid)
     date_start: "2020-02-01"
     date_end: "2020-08-01"
     description: |2-

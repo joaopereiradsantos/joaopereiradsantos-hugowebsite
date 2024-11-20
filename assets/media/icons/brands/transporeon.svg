@@ -1,0 +1,40 @@
+<svg version="1.1" id="Layer_1" xmlns:x="ns_extend;" xmlns:i="ns_ai;" xmlns:graph="ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42 39.6" style="enable-background:new 0 0 42 39.6;" xml:space="preserve">
+ <style type="text/css">
+  .st0{fill:#000000;} <!-- Changed from #F6C420 (yellow) to #000000 (black) -->
+	.st1{display:none;}
+ </style>
+ <metadata>
+  <sfw xmlns="ns_sfw;">
+   <slices>
+   </slices>
+   <sliceSourceBounds bottomLeftOrigin="true" height="39.6" width="42" x="750" y="-154.6">
+   </sliceSourceBounds>
+  </sfw>
+ </metadata>
+ <g>
+  <g id="Layer_1_1_">
+  </g>
+  <g id="Layer_2_1_">
+   <g>
+    <g>
+     <g>
+      <path class="st0" d="M26.3,39.6v-6.9c4.8-1.5,8.1-5.7,8.1-12.9S31.1,8.3,26.3,6.9V0C35,0.2,42.2,9.5,42,19.7
+						C42.2,30,35,39.4,26.3,39.6">
+      </path>
+      <path class="st0" d="M15.7,0v6.9c-4.8,1.5-8.1,5.7-8.1,12.9s3.4,11.4,8.1,12.9v6.9C7,39.4-0.2,30.1,0,19.9
+						C-0.2,9.6,7,0.2,15.7,0">
+      </path>
+     </g>
+    </g>
+   </g>
+  </g>
+  <g id="Layer_3">
+  </g>
+  <g id="Layer_5">
+  </g>
+  <g id="Layer_6">
+  </g>
+  <g id="Layer_4" class="st1">
+  </g>
+ </g>
+</svg>
