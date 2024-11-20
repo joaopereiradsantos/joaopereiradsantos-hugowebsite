@@ -6,12 +6,12 @@ title: João Santos
 superuser: true
 
 # Role/position/tagline
-role: Senior Business Intelligence Engineer II, EU Supply Chain Analytics
+role: Senior Data Engineer, Autonomous Procurement
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Amazon
-    url: https://amazon.com/
+  - name: Transporeon
+    url: https://transporeon.com/
 
 # Short bio (displayed in user profile at end of posts)
 bio: 
