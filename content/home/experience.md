@@ -213,6 +213,11 @@ experience:
           <ul>
             <li>The core modeling started as a Nested Sorting optimization but migrated to a Integer Linear Programming (ILP) optimization using the FICO Xpress Solver. While the core mathematical concepts remain, as opposed to achieve a single optimal output, PSA uses a weights tunning approach for every new set of inputs simulating 1k+ data points for different weight and objective function combinations;</li>
             <li>While the previous production model (SPOCK) produced an overall weekly weighted average of 33 cube per pod (CPP), PSA generated 36 CPP (~10% improvement). Fullness of all pods transferred is on average 105% instead of 90%. Similarly, the actual weekly weighted average units per pod (UPP) was 550 while PSA’s UPP equaled 420 (~15% decrease), which reduces OB NWA because of less inventory units. PSA really stands out when it comes to unique inventory: SPOCK logic transferred 140k unique units, totaling 7% with respect to the total transferred units, while PSA transferred 45k, 2% versus the total transferred units (500bps reduction).</li>
+            <div style="display: flex; flex-wrap: nowrap; gap: 1%;">
+              <img src="https://joaopereiradsantos.com/uploads/psa_3dxpress.png" alt="psa_3dxpress" style="width: 32%;">
+              <img src="https://joaopereiradsantos.com/uploads/psa_boxchart.png" alt="psa_boxchart" style="width: 32%;">
+              <img src="https://joaopereiradsantos.com/uploads/psa_scatterplotmatrix.png" alt="psa_scatterplotmatrix" style="width: 32%;">
+            </div>
           </ul> 
           </details></p>
         </li>
